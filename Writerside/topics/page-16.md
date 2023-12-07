@@ -1,3 +1,1 @@
-# page-16
-
-Start typing here...
+# Exercise 1 - solution

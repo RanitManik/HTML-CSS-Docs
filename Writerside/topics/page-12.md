@@ -1,3 +1,1 @@
-# page-12
-
-Start typing here...
+# Exercise 1 - Pure HTML Media Player

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="wdd"
+                 name="web dev docs"
+                 start-page="page-01.md">
+
+    <toc-element topic="page-01.md"/>
+    <toc-element topic="page-02.md"/>
+    <toc-element topic="page-03.md"/>
+    <toc-element topic="page-04.md"/>
+    <toc-element topic="page-05.md"/>
+    <toc-element topic="page-06.md"/>
+    <toc-element topic="page-07.md"/>
+    <toc-element topic="page-08.md"/>
+    <toc-element topic="page-09.md"/>
+    <toc-element topic="page-10.md"/>
+    <toc-element topic="page-11.md"/>
+    <toc-element topic="page-12.md"/>
+    <toc-element topic="page-13.md"/>
+    <toc-element topic="page-14.md"/>
+    <toc-element topic="page-15.md"/>
+    <toc-element topic="page-16.md"/>
+    <toc-element topic="page-17.md"/>
+    <toc-element topic="page-18.md"/>
+    <toc-element topic="page-19.md"/>
+    <toc-element topic="page-20.md"/>
+</instance-profile>

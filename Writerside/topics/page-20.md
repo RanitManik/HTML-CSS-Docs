@@ -1,3 +1,1 @@
-# page-20
-
-Start typing here...
+# Exercise 2 - CSS Challenge
