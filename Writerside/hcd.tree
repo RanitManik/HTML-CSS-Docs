@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hcd"
+                 name="HTML CSS doc"
+                 start-page="html-css-doc.md">
+
+    <toc-element topic="html-css-doc.md"/>
+</instance-profile>
