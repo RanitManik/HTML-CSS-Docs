@@ -1,8 +1,9 @@
 # CSS Position Property
 
-The `position` property in CSS is used to specify the positioning method of an element within its containing element. It plays a crucial role in determining how elements are placed and behave on a web page.
+The `position` property in CSS is used to specify the positioning method of an element within its containing element. It
+plays a crucial role in determining how elements are placed and behave on a web page.
 
-## Values of `position` Property:
+## Values of `position` Property
 
 1. **static (default):**
     - The element is positioned according to the normal flow of the document.
@@ -21,7 +22,8 @@ The `position` property in CSS is used to specify the positioning method of an e
    ```
 
 3. **absolute:**
-    - The element is removed from the normal document flow, and its position is based on the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+    - The element is removed from the normal document flow, and its position is based on the nearest positioned
+      ancestor (instead of positioned relative to the viewport, like fixed).
 
    ```css
    position: absolute;
@@ -36,16 +38,18 @@ The `position` property in CSS is used to specify the positioning method of an e
    ```
 
 5. **sticky:**
-    - The element is treated as relative positioned until it crosses a specified point during scrolling, then it is treated as fixed positioned.
+    - The element is treated as relative positioned until it crosses a specified point during scrolling, then it is
+      treated as fixed positioned.
 
    ```css
    position: sticky;
    ```
 
-## Additional Properties:
+## Additional Properties
 
 - **top, right, bottom, left:**
-    - Used with `position: relative`, `position: absolute`, or `position: fixed` to determine the final position of the element.
+    - Used with `position: relative`, `position: absolute`, or `position: fixed` to determine the final position of the
+      element.
 
   ```css
   top: 20px;
@@ -54,7 +58,7 @@ The `position` property in CSS is used to specify the positioning method of an e
   left: 5px;
   ```
 
-## Use Cases:
+## Use Cases
 
 1. **Relative Positioning:**
     - Shifting an element from its normal position.
@@ -100,4 +104,5 @@ The `position` property in CSS is used to specify the positioning method of an e
    }
    ```
 
-Understanding the `position` property is fundamental for layout control in CSS. It allows developers to precisely position and manipulate elements to achieve the desired visual layout and user experience.
+Understanding the `position` property is fundamental for layout control in CSS. It allows developers to precisely
+position and manipulate elements to achieve the desired visual layout and user experience.

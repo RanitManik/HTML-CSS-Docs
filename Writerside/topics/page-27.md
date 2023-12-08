@@ -1,3 +1,0 @@
-# page-27
-
-Start typing here...

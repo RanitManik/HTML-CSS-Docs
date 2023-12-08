@@ -94,22 +94,6 @@ outline-offset: Npx;
 outline-offset: 5px;
 ```
 
-### Border Radius
-
-The `border-radius` property adds rounded corners to an element's border. It affects all four corners simultaneously.
-
-```css
-border-radius: Npx;
-```
-
-**Example:**
-
-```css
-border-radius: 2px;
-```
-
-- All four corners have a radius of 2 pixels.
-
 ### Difference Between Outline and Border
 
 - **Outline:**

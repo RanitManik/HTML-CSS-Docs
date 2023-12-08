@@ -1,4 +1,4 @@
-# Web Development Basics
+# Your First HTML Website
 
 ## Configuring GIT
 
@@ -76,7 +76,7 @@ JavaScript. To link CSS and JavaScript to your HTML file:
       <script src="script.js"></script>
       ```
 
-## iPhone 15 Pro Max - Client-Server Interaction Explained
+## Client-Server Interaction Explained
 
 Understanding client-server interaction is fundamental in web development. Let's briefly explore this concept:
 

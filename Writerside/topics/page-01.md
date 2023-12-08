@@ -1,4 +1,4 @@
-# Web Development Basics
+# Installing VS Code & How Websites Work
 
 ## Introduction
 

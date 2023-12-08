@@ -3,7 +3,7 @@
 CSS Variables, also known as Custom Properties, introduce a way to define reusable values in CSS. They are entities
 defined by CSS authors that contain specific values to be reused throughout a document.
 
-## Declaration and Syntax:
+## Declaration and Syntax
 
 - Declaring a variable:
 
@@ -15,7 +15,7 @@ defined by CSS authors that contain specific values to be reused throughout a do
 
   Here, `--main-color` is the variable name, and `#3498db` is the value.
 
-## Usage:
+## Usage
 
 - Using a variable in a CSS rule:
 
@@ -27,7 +27,7 @@ defined by CSS authors that contain specific values to be reused throughout a do
 
   This assigns the background color of the `body` element to the value of `--main-color`.
 
-## Key Points:
+## Key Points
 
 1. **:root Selector:**
     - Variables are often declared in the `:root` selector to make them global and accessible throughout the document.
@@ -69,7 +69,7 @@ defined by CSS authors that contain specific values to be reused throughout a do
 
    This uses `'Arial', sans-serif` as a fallback if `--font-family` is not supported.
 
-## Benefits:
+## Benefits
 
 1. **Reusability:**
     - Variables allow the reuse of values throughout the stylesheet, promoting consistency and easy updates.
@@ -80,7 +80,7 @@ defined by CSS authors that contain specific values to be reused throughout a do
 3. **Dynamic Changes:**
     - Variables can be modified dynamically using JavaScript, enabling changes in real-time.
 
-## Example:
+## Example
 
 ```css
 :root {
