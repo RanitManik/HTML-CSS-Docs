@@ -1,4 +1,4 @@
-# CSS Selectors MasterClass
+# CSS Selectors
 
 ## Introduction
 
@@ -6,32 +6,22 @@ Welcome to the CSS Selectors MasterClass, where we embark on a detailed explorat
 are the architects of style, allowing you to precisely target and enhance HTML elements. Join us as we dissect each
 selector, providing detailed examples and sub-properties to empower you in crafting visually stunning web pages.
 
-## Internal CSS
+## Types of Selectors
 
-Internal CSS, or embedded styles, is the foundation of our exploration. This method involves placing CSS directly within
-the HTML document, offering a quick and straightforward way to apply styles to specific elements.
+We can divide CSS selectors into five categories:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-<h1>This is a styled heading.</h1>
-</body>
-</html>
-```
+- Simple selectors (select elements based on name, id, class)
+- Combinator selectors (select elements based on a specific relationship between them)
+- Pseudo-class selectors (select elements based on a certain state)
+- Pseudo-elements selectors (select and style a part of an element)
+- Attribute selectors (select elements based on an attribute or attribute value)
 
-## (Element Selector) Selection of Div
+## Simple Selectors
+
+In this section, we will be discussing all types of simple selectors. In the next section, we will discuss the remaining
+topics.
+
+* ### Element Selector (Selection of Div)
 
 The Element Selector is the fundamental selector, targeting HTML elements directly. Let's begin with the selection and
 styling of `<div>` elements.
@@ -44,7 +34,7 @@ div {
 }
 ```
 
-## Class Selector
+* ### Class Selector
 
 Class selectors enable you to style multiple elements sharing a common class attribute. They provide consistency and
 flexibility in styling.
@@ -63,7 +53,7 @@ flexibility in styling.
 }
 ```
 
-## ID Selector
+* ### ID Selector
 
 ID selectors uniquely style a specific HTML element. They are precise and useful when an individual element requires
 distinct styling.
@@ -77,7 +67,7 @@ distinct styling.
 }
 ```
 
-## Child Selector
+* ### Child Selector
 
 The Child Selector targets direct children of a specified parent element. It allows you to style specific levels of
 hierarchy within your HTML structure.
@@ -90,7 +80,7 @@ nav > ul {
 }
 ```
 
-## Descendant Selector
+* ### Descendant Selector
 
 The Descendant Selector reaches deep into nested HTML structures, allowing you to style elements based on their
 ancestry.
@@ -102,7 +92,7 @@ article p {
 }
 ```
 
-## Universal Selector
+* ### Universal Selector
 
 The Universal Selector is a wildcard, selecting all elements on the page. Use it with caution, as it applies styles
 globally.
@@ -115,6 +105,40 @@ globally.
 }
 ```
 
+* ### Grouping Selector
+
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+
+```css
+h1 {
+text-align: center;
+color: red;
+}
+
+h2 {
+text-align: center;
+color: red;
+}
+
+p {
+text-align: center;
+color: red;
+}
+```
+
+It will be better to group the selectors, to minimize the code.
+To group selectors, separate each selector with a comma.In this example we have grouped the selectors from the code
+above:
+
+```css
+h1, h2, p {
+text-align: center;
+color: red;
+}
+```
+
 ## Pseudo Selector
 
 Pseudo-selectors offer dynamic styling based on element states or positions. Explore the versatility of pseudo-classes
@@ -124,6 +148,17 @@ and pseudo-elements.
 a:hover {
     color: #FF4500;
     text-decoration: underline;
+}
+```
+
+## Attribute Negation Selector
+
+If you want to select elements that do not have a specific attribute, you can use the attribute negation selector:
+
+```css
+/* Selects all images without an "alt" attribute */
+img:not([alt]) {
+    border: 2px solid red;
 }
 ```
 
