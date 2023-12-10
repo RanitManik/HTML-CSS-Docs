@@ -20,7 +20,7 @@ flow of the document, and the surrounding content flows around it.
 }
 ```
 
-### Example
+**Example**
 
 ```html
 
@@ -37,7 +37,7 @@ right, and the normal paragraph will flow around them.
 The `clear` property is used to specify whether an element should be positioned next to (on the left or right) or below
 the floating elements. It is often used to prevent unwanted wrapping around floated elements.
 
-### Basic Syntax
+**Basic Syntax**
 
 ```css
 /* Clear elements next to the floated elements */
@@ -54,7 +54,7 @@ the floating elements. It is often used to prevent unwanted wrapping around floa
 }
 ```
 
-### Example
+**Example**
 
 ```html
 
@@ -71,7 +71,7 @@ clear-both," causing it to appear below both floated elements.
 When using floats, it's common to encounter a problem where the containing element doesn't fully wrap around the floated
 elements. The clearfix hack is a technique to fix this issue.
 
-### Example
+**Example**
 
 ```css
 /* Clearfix hack */

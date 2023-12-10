@@ -12,7 +12,7 @@ In Cascading Style Sheets (CSS), the pixel unit (`px`) is an absolute measuremen
 dimensions. One pixel corresponds to one dot on the screen, making it a fixed-size unit that doesn't change with respect
 to the user's settings or display characteristics.
 
-### Example:
+**Example:**
 
 ```css
 .element {
@@ -26,12 +26,12 @@ In this example, the `.element` class is set to have a fixed width of 200 pixels
 of 1 pixel solid black. Regardless of the user's screen size or display settings, these dimensions remain constant,
 providing a pixel-perfect design.
 
-### Use Cases:
+**Use Cases:**
 
 1. **Precise Sizing**: Ideal for elements that require exact dimensions, such as logos or images with fixed sizes.
 2. **Border and Margin Definitions**: Useful for setting specific border widths or margin/padding values.
 
-### Considerations:
+**Considerations:**
 
 - **Not Responsive**: Since pixel values do not adjust to the user's viewport or device characteristics, designs based
   solely on pixels may not be fully responsive across different screens.
@@ -41,7 +41,7 @@ providing a pixel-perfect design.
 In Cascading Style Sheets (CSS), `vw` (viewport width) and `vh` (viewport height) are viewport-percentage units that
 provide a dynamic and responsive way to define dimensions relative to the size of the browser window.
 
-### Example:
+**Example:**
 
 ```css
 .element {
@@ -55,13 +55,13 @@ In this example, the `.element` class is styled to have a width equal to 50% of 
 equal to 30% of the viewport height (`vh`). This ensures that the element's dimensions adapt proportionally to the size
 of the browser window.
 
-### Use Cases:
+**Use Cases:**
 
 1. **Responsive Layouts**: `vw` and `vh` are effective for creating layouts that adjust based on the width and height of
    the viewport, respectively.
 2. **Fluid Typography**: These units can be applied to font sizes to create text that scales with the viewport size.
 
-### Considerations:
+**Considerations:**
 
 - **Viewport Sensitivity**: Changes in the size of the browser window will directly impact elements sized using `vw`
   and `vh`.
@@ -73,7 +73,7 @@ of the browser window.
 In Cascading Style Sheets (CSS), `rem` (root em) and `em` (em) are relative units that are based on the font size.
 Understanding how these units work is essential for creating scalable and maintainable designs.
 
-### Example:
+**Example:**
 
 ```css
 body {
@@ -90,14 +90,14 @@ In this example, the `rem` unit is used to set the font size of the `.element` c
 defined in the `body`. The `em` unit is then used to set the left margin to be 2 times the font size of the `.element`
 itself.
 
-### Use Cases:
+**Use Cases:**
 
 1. **Scalable Typography**: `rem` is beneficial for setting a consistent base font size across the entire document,
    making it easy to scale typography proportionally.
 2. **Relative Sizing**: `em` allows for sizing elements based on their parent's font size, creating a relative and
    scalable structure.
 
-### Considerations:
+**Considerations:**
 
 - **Global Control with `rem`**: Setting the base font size at the document level with `rem` provides a global control
   for scalable typography.
@@ -110,7 +110,7 @@ In Cascading Style Sheets (CSS), `vmin` and `vmax` are viewport-percentage units
 the viewport dimensions. These units are particularly useful for creating flexible layouts that adapt to different
 screen sizes.
 
-### Example:
+**Example:**
 
 ```css
 .element {
@@ -124,14 +124,14 @@ In this example, the `.element` class is styled to have a width equal to 50% of 
 and a height equal to 70% of the larger viewport dimension (`vmax`). This allows for responsive sizing that adjusts
 proportionally to the available space.
 
-### Use Cases:
+**Use Cases:**
 
 1. **Responsive Layouts**: `vmin` and `vmax` are effective for creating layouts that scale proportionally across
    different devices.
 2. **Flexible Typography**: These units can be applied to font sizes to ensure text remains readable on both small and
    large screens.
 
-### Considerations:
+**Considerations:**
 
 - **Viewport Sensitivity**: Sizing is relative to the viewport, so changes in the viewport size will impact the
   dimensions of elements using `vmin` and `vmax`.
@@ -143,7 +143,7 @@ proportionally to the available space.
 In Cascading Style Sheets (CSS), the percentage unit (%) is a relative unit that is widely used for defining dimensions
 and properties in relation to the size of the parent element.
 
-### Example:
+**Example:**
 
 ```css
 .parent {
@@ -160,14 +160,14 @@ In this example, the `.child` class is styled to have a width of 50%, which mean
 its parent element (`.parent`). The percentage is calculated based on the dimensions of the parent, allowing for a
 flexible and responsive layout.
 
-### Use Cases:
+**Use Cases:**
 
 1. **Relative Sizing**: Using percentages allows elements to adapt to changes in the size of their parent, making it a
    flexible choice for responsive designs.
 2. **Fluid Grid Layouts**: Percentages are commonly employed in creating fluid grid layouts where elements resize
    proportionally.
 
-### Considerations:
+**Considerations:**
 
 - **Parent-Dependent**: The percentage value is relative to the dimensions of the parent element. Changes in the
   parent's size will affect the child's size accordingly.
@@ -184,7 +184,7 @@ Beyond the commonly used units, there are additional units with unique character
 The `ex` unit represents the height of the lowercase "x" in the current font, while the `ch` unit represents the width
 of the "0" character.
 
-#### Example:
+**Example:**
 
 ```css
 .element {

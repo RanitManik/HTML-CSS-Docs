@@ -11,7 +11,7 @@ visually stunning and well-organized websites.
 Inline CSS involves styling individual HTML elements directly within the tags using the `style` attribute. While it's
 quick for small adjustments, it's not always the most efficient for extensive styling.
 
-### Example:
+**Example:** 
 
 ```html
 <p style="color: blue; font-size: 16px;">This is a styled paragraph.</p>
@@ -30,7 +30,7 @@ quick for small adjustments, it's not always the most efficient for extensive st
 Internal CSS is applied within the `<style>` tag in the HTML document's `<head>` section. It allows you to style
 multiple elements on a single page without affecting other pages.
 
-### Example:
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ multiple elements on a single page without affecting other pages.
 External CSS involves linking a separate CSS file to your HTML document. This method promotes maintainability and
 reusability, making it ideal for styling multiple pages consistently.
 
-### Example (style.css):
+**Example:**
 
 ```css
 /* style.css */

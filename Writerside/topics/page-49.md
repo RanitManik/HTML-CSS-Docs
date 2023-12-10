@@ -9,7 +9,7 @@ content and covers the entire container.
 The `object-fit` property has several values, and it determines how the content of the replaced element should be fitted
 to the box established by its used height and width.
 
-### Example:
+**Example:**
 
 ```css
 img {
@@ -27,7 +27,7 @@ by 150px) while maintaining its aspect ratio.
 The `object-cover` value is a specific option for the `object-fit` property. When applied, it scales the content
 proportionally and clips it so that it entirely covers the box.
 
-### Example:
+**Example:**
 
 ```css
 img {

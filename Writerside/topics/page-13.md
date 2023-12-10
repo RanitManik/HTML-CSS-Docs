@@ -19,7 +19,7 @@ HTML ensures the effective structuring of content, forming the basis for a seaml
 HTML entities are used to represent characters that might otherwise be misinterpreted as code. They play a critical role
 in displaying reserved characters without disrupting the HTML structure.
 
-#### Examples:
+**Examples:**
 
 - `&lt;` represents `<`.
 - `&gt;` represents `>`.
@@ -29,7 +29,7 @@ in displaying reserved characters without disrupting the HTML structure.
 
 HTML provides special symbols for various purposes, enhancing content presentation.
 
-#### Examples:
+**Examples:**
 
 - `&copy;` represents © (copyright symbol).
 - `&reg;` represents ® (registered trademark symbol).
@@ -41,7 +41,7 @@ Quotation tags are essential for indicating the beginning and end of quotations.
 quotations, while obsolete tags like `<blockquote>` still exist for block-level quotations.They help screen readers to
 recognize them.
 
-#### Example:
+**Example:**
 
 ```html
 
@@ -55,7 +55,7 @@ recognize them.
 The `<code>` tag is used to define a piece of computer code. To enhance code presentation and syntax highlighting, the
 Prism.js library can be employed.
 
-#### Example:
+**Example:**
 
 ```html
 <code class="language-html">
