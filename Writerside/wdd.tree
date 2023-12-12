@@ -35,6 +35,7 @@
         <toc-element topic="Fundamentals-25.md"/>
         <toc-element topic="Fundamentals-26.md"/>
         <toc-element topic="Fundamentals-28.md"/>
+        <toc-element topic="Extra-01.md"/>
         <toc-element topic="Fundamentals-30.md"/>
         <toc-element topic="Fundamentals-31.md"/>
         <toc-element topic="Fundamentals-34.md"/>
@@ -45,8 +46,9 @@
         <toc-element topic="Fundamentals-46.md"/>
         <toc-element topic="Fundamentals-49.md"/>
         <toc-element topic="Fundamentals-50.md"/>
+        <toc-element topic="Extra-02-md.md"/>
     </toc-element>
     <toc-element topic="Section-2.md">
-        <toc-element topic="Fundamentals-20.md"/>
+        <toc-element topic="Advanced-01.md"/>
     </toc-element>
 </instance-profile>
