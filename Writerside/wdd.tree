@@ -50,5 +50,7 @@
     </toc-element>
     <toc-element topic="Section-2.md">
         <toc-element topic="Advanced-01.md"/>
+        <toc-element topic="Advanced-02-md.md"/>
+        <toc-element topic="Advanced-03.md"/>
     </toc-element>
 </instance-profile>
