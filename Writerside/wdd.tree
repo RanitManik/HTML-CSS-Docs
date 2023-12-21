@@ -4,11 +4,10 @@
 
 <instance-profile id="wdd"
                   name="web dev docs"
-                  start-page="Section-1.md">
+                  start-page="Fundamentals-01.md">
 
     <toc-element topic="Section-1.md">
         <toc-element topic="Fundamentals-01.md"/>
-        <toc-element topic="Fundamentals-02.md"/>
         <toc-element topic="Fundamentals-03.md"/>
         <toc-element topic="Fundamentals-04.md"/>
         <toc-element topic="Fundamentals-05.md"/>
@@ -19,13 +18,14 @@
         <toc-element topic="Fundamentals-10.md"/>
         <toc-element topic="Fundamentals-11.md"/>
         <toc-element topic="Fundamentals-13.md"/>
+    </toc-element>
+    <toc-element topic="Section-2.md">
         <toc-element topic="Fundamentals-14.md"/>
         <toc-element topic="Fundamentals-15.md"/>
-        <toc-element topic="Fundamentals-17.md">
-            <toc-element topic="Fundamentals-17-01.md"/>
-            <toc-element topic="Fundamentals-17-02.md"/>
-            <toc-element topic="Fundamentals-17-03.md"/>
-        </toc-element>
+        <toc-element topic="Fundamentals-17.md"/>
+        <toc-element topic="Fundamentals-17-01.md"/>
+        <toc-element topic="Fundamentals-17-03.md"/>
+        <toc-element topic="Fundamentals-17-02.md"/>
         <toc-element topic="Fundamentals-18.md"/>
         <toc-element topic="Fundamentals-19.md"/>
         <toc-element topic="Fundamentals-21.md"/>
@@ -46,11 +46,16 @@
         <toc-element topic="Fundamentals-46.md"/>
         <toc-element topic="Fundamentals-49.md"/>
         <toc-element topic="Fundamentals-50.md"/>
-        <toc-element topic="Extra-02-md.md"/>
+        <toc-element topic="Extra-02.md"/>
+        <toc-element topic="Extra-03.md"/>
     </toc-element>
-    <toc-element topic="Section-2.md">
+    <toc-element topic="Section-3.md">
         <toc-element topic="Advanced-01.md"/>
-        <toc-element topic="Advanced-02-md.md"/>
+        <toc-element topic="Advanced-02.md"/>
         <toc-element topic="Advanced-03.md"/>
+        <toc-element topic="Advanced-04.md"/>
+        <toc-element topic="Advanced-05.md"/>
+        <toc-element topic="Advanced-06.md"/>
+        <toc-element topic="3-modern-CSS-techniques-for-responsive-design.md"/>
     </toc-element>
 </instance-profile>
