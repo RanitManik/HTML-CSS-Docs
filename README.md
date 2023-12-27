@@ -24,9 +24,9 @@ fascinating world of web development using HTML and CSS.
 This documentation is authored by Ranit Manik, a dedicated web developer proficient in HTML, CSS, and JavaScript. The
 primary objective of this project is to provide a well-organized and beginner-friendly guide for mastering the
 fundamentals of web design. The development of this project is facilitated
-using [JetBrains WriteSide IDE](https://www.jetbrains.com/writerside/). To contribute
+using [JetBrains Writerside IDE](https://www.jetbrains.com/writerside/). To contribute
 to this project, it is recommended to download and utilize
-JetBrains [WriteSide IDE](https://www.jetbrains.com/writerside/) for an optimal development
+JetBrains [Writerside IDE](https://www.jetbrains.com/writerside/) for an optimal development
 experience.
 
 ## Features
