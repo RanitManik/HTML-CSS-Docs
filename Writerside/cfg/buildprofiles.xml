@@ -6,12 +6,6 @@
         <product-web-url>https://github.com/RanitManik/HTML-CSS-Docs</product-web-url>
         <custom-favicons>logo.png</custom-favicons>
     </variables>
-    <variables>
-        <algolia-id>GANT58JZTG</algolia-id>
-        <algolia-index>HTML CSS docs 1.0</algolia-index>
-        <algolia-api-key>cd00dd30a912099ef8f46cb74bc577c4</algolia-api-key>
-        <web-root>https://ranitmanik.github.io/HTML-CSS-Docs/</web-root>
-    </variables>
     <build-profile instance="hcd1">
         <variables>
             <noindex-content>true</noindex-content>
