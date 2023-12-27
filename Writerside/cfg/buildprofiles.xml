@@ -2,16 +2,20 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
-    <build-profile instance="hi">
-        <variables>
-            <noindex-content>true</noindex-content>
-        </variables>
-    </build-profile>
+    <variables>
+        <header-logo>logo.png</header-logo>
+        <product-web-url>https://github.com/RanitManik/HTML-CSS-Docs</product-web-url>
+        <custom-favicons>logo.png</custom-favicons>
+    </variables>
+    <variables>
+        <algolia-id>GANT58JZTG</algolia-id>
+        <algolia-index>HTML CSS docs 1.0</algolia-index>
+        <algolia-api-key>cd00dd30a912099ef8f46cb74bc577c4</algolia-api-key>
+        <web-root>https://ranitmanik.github.io/HTML-CSS-Docs/</web-root>
+    </variables>
     <build-profile instance="hcd">
         <variables>
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
-
 </buildprofiles>

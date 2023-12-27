@@ -5,7 +5,7 @@ various properties at our disposal, the `inline` and `block` keywords play a cru
 elements along the inline and block axes, respectively. In this article, we'll explore how these keywords are employed
 in different CSS properties to shape the visual presentation of web pages.
 
-## **1. Margin and Padding Properties**
+## **Margin and Padding Properties**
 
 One of the fundamental applications of the `block` and `inline` keywords lies in the `margin` and `padding` properties.
 
@@ -23,7 +23,7 @@ One of the fundamental applications of the `block` and `inline` keywords lies in
 }
 ```
 
-## **2. Border and Outline Properties**
+## **Border and Outline Properties**
 
 These keywords can also be utilized in the `border` and `outline` properties to control the rendering of an element's
 borders and outlines.
@@ -41,7 +41,7 @@ borders and outlines.
 }
 ```
 
-## **3. Width and Height Properties**
+## **Width and Height Properties**
 
 The `width` and `height` properties also leverage the `inline` and `block` keywords to set the size of an element along
 the respective axes.

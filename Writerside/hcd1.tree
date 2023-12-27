@@ -2,11 +2,12 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="wdd"
-                  name="web dev docs"
-                  start-page="Fundamentals-01.md">
+<instance-profile id="hcd1"
+                  name="HTML CSS Docs 1.0"
+                  start-page="Getting-Started.topic">
 
-    <toc-element topic="Section-1.md">
+    <toc-element topic="Getting-Started.topic"/>
+    <toc-element topic="HTML-Fundamentals.topic">
         <toc-element topic="Fundamentals-01.md"/>
         <toc-element topic="Fundamentals-03.md"/>
         <toc-element topic="Fundamentals-04.md"/>
@@ -19,7 +20,7 @@
         <toc-element topic="Fundamentals-11.md"/>
         <toc-element topic="Fundamentals-13.md"/>
     </toc-element>
-    <toc-element topic="Section-2.md">
+    <toc-element topic="CSS-Fundamentals.topic">
         <toc-element topic="Fundamentals-14.md"/>
         <toc-element topic="Fundamentals-15.md"/>
         <toc-element topic="Fundamentals-17.md"/>
@@ -40,23 +41,18 @@
         <toc-element topic="Fundamentals-31.md"/>
         <toc-element topic="Fundamentals-34.md"/>
         <toc-element topic="Fundamentals-38.md"/>
+        <toc-element topic="Extra-02.md"/>
         <toc-element topic="Fundamentals-39.md"/>
         <toc-element topic="Fundamentals-42.md"/>
         <toc-element topic="Fundamentals-45.md"/>
         <toc-element topic="Fundamentals-46.md"/>
         <toc-element topic="Fundamentals-49.md"/>
         <toc-element topic="Fundamentals-50.md"/>
-        <toc-element topic="Extra-02.md"/>
         <toc-element topic="Extra-03.md"/>
+        <toc-element topic="Extra-04.md"/>
+        <toc-element topic="Extra-05.md"/>
+        <toc-element topic="Extra-06.md"/>
+        <toc-element topic="Extra-07.md"/>
     </toc-element>
-    <toc-element topic="Section-3.md">
-        <toc-element topic="Advanced-01.md"/>
-        <toc-element topic="Advanced-02.md"/>
-        <toc-element topic="Advanced-03.md"/>
-        <toc-element topic="Advanced-04.md"/>
-        <toc-element topic="Advanced-05.md"/>
-        <toc-element topic="Advanced-06.md"/>
-        <toc-element topic="3-modern-CSS-techniques-for-responsive-design.md"/>
-        <toc-element topic="Advanced-07.md"/>
-    </toc-element>
+    <toc-element topic="About-HTML-CSS-docs.md"/>
 </instance-profile>

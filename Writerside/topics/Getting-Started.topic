@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Getting Started" id="Getting-Started" help-id="Section-Starting-Page;Getting Started">
+
+    <!--
+## About This Documentation
+
+I'm Ranit Manik, a fellow computer science student who, like many of you, once faced the challenge of navigating through
+extensive documentation while learning web development. Traditional resources can sometimes be overwhelming, especially
+for beginners, with their detailed explanations of every property and concept.
+
+This documentation is my attempt to make your learning journey smoother and more practical. I've distilled the
+essentials of HTML and CSS into straightforward, easy-to-understand sections, focusing on hands-on, real-world
+application. Each topic is designed to help you get started quickly, laying a strong foundation for your web development
+endeavors.  -->
+
+    <section-starting-page>
+        <title>Getting started</title>
+        <description>
+            Check out the most useful Documentation for Beginners to get you started with HTML and CSS.
+        </description>
+
+        <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
+        <spotlight>
+            <a href="HTML-Fundamentals.topic" type="documents"
+               summary="Explore our beginner-friendly docs for HTML to get yourself started with Web Development">Get
+                Started with HTML</a>
+            <a href="CSS-Fundamentals.topic" type="documents"
+               summary="Already Know HTML! Checkout our most comprehensive and detailed guide for CSS">Get Started with
+                CSS</a>
+        </spotlight>
+
+        <!--    Add several topics that are most important for this section.    -->
+        <primary>
+            <title>Get started with HTML</title>
+            <a href="Fundamentals-01.md"/>
+            <a href="Fundamentals-03.md"/>
+            <a href="Fundamentals-04.md"/>
+            <a href="Fundamentals-05.md"/>
+        </primary>
+
+        <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
+        <secondary>
+            <title>Explore CSS</title>
+            <a href="Fundamentals-14.md"/>
+            <a href="Fundamentals-15.md"/>
+            <a href="Fundamentals-17.md"/>
+            <a href="Fundamentals-18.md"/>
+        </secondary>
+        <!--    Optionally add additional cards and links to topics that are not in this section but may be relevant.    -->
+        <misc>
+            <links>
+                <group>
+                    <title>Contact me</title>
+                    <a href="https://github.com/RanitManik" summary="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ranit-manik/" summary="LinkedIn">LinkedIn</a>
+                    <a href="https://www.instagram.com/ranit_manik_/" summary="Instagram">Instagram</a>
+                    <a href="https://www.facebook.com/RanitKumarManik/" summary="facebook">facebook</a>
+                    <a href="https://twitter.com/RANIT_MANIK" summary="Twitter">Twitter</a>
+                </group>
+            </links>
+        </misc>
+    </section-starting-page>
+</topic>

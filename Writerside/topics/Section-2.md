@@ -1,3 +1,0 @@
-# CSS Fundamentals
-
-Start typing here...

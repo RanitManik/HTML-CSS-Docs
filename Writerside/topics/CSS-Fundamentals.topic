@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="CSS Fundamentals" id="CSS-Fundamentals" help-id="CSS Fundamentals">
+
+    <!--
+## About This Documentation
+
+I'm Ranit Manik, a fellow computer science student who, like many of you, once faced the challenge of navigating through
+extensive documentation while learning web development. Traditional resources can sometimes be overwhelming, especially
+for beginners, with their detailed explanations of every property and concept.
+
+This documentation is my attempt to make your learning journey smoother and more practical. I've distilled the
+essentials of HTML and CSS into straightforward, easy-to-understand sections, focusing on hands-on, real-world
+application. Each topic is designed to help you get started quickly, laying a strong foundation for your web development
+endeavors.
+-->
+
+    <section-starting-page>
+        <title>CSS Fundamentals</title>
+        <description>
+            In this Section, we are exploring all the basics of CSS.
+        </description>
+        <spotlight>
+            <a href="HTML-Fundamentals.topic" type="documents"
+               summary="Explore our beginner-friendly docs for HTML to get yourself started with Web Development">Get
+                Started with HTML</a>
+            <a href="CSS-Fundamentals.topic" type="documents"
+               summary="Already Know HTML! Checkout our most comprehensive and detailed guide for CSS">Get Started with
+                CSS</a>
+        </spotlight>
+        <primary>
+            <title>Get started with HTML</title>
+            <a href="Fundamentals-01.md"/>
+            <a href="Fundamentals-03.md"/>
+            <a href="Fundamentals-04.md"/>
+            <a href="Fundamentals-05.md"/>
+        </primary>
+        <secondary>
+            <title>Explore CSS</title>
+            <a href="Fundamentals-14.md"/>
+            <a href="Fundamentals-15.md"/>
+            <a href="Fundamentals-17.md"/>
+            <a href="Fundamentals-18.md"/>
+        </secondary>
+        <misc>
+            <cards narrow="true">
+                <title>Contents</title>
+                <a href="Fundamentals-15.md"/>
+                <a href="Fundamentals-17.md"/>
+                <a href="Fundamentals-17-01.md"/>
+                <a href="Fundamentals-17-03.md"/>
+                <a href="Fundamentals-17-02.md"/>
+                <a href="Fundamentals-18.md"/>
+                <a href="Fundamentals-19.md"/>
+                <a href="Fundamentals-21.md"/>
+                <a href="Fundamentals-22.md"/>
+                <a href="Fundamentals-23.md"/>
+                <a href="Fundamentals-24.md"/>
+                <a href="Fundamentals-25.md"/>
+                <a href="Fundamentals-26.md"/>
+                <a href="Fundamentals-28.md"/>
+                <a href="Extra-01.md"/>
+                <a href="Fundamentals-30.md"/>
+                <a href="Fundamentals-31.md"/>
+                <a href="Fundamentals-34.md"/>
+                <a href="Fundamentals-38.md"/>
+                <a href="Extra-02.md"/>
+                <a href="Fundamentals-39.md"/>
+                <a href="Fundamentals-42.md"/>
+                <a href="Fundamentals-45.md"/>
+                <a href="Fundamentals-46.md"/>
+                <a href="Fundamentals-49.md"/>
+                <a href="Fundamentals-50.md"/>
+                <a href="Extra-03.md"/>
+                <a href="Extra-04.md"/>
+                <a href="Extra-05.md"/>
+                <a href="Extra-06.md"/>
+                <a href="Extra-07.md"/>
+            </cards>
+        </misc>
+    </section-starting-page>
+</topic>

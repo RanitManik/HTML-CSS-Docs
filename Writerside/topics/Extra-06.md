@@ -4,7 +4,7 @@ Tired of repetitive styling and basic hover effects? Buckle up, developers, beca
 of advanced CSS pseudo-classes! These powerful tools unlock a new level of flexibility and precision, allowing you to
 target elements based on their dynamic states, relationships, and even content.
 
-## 1. Targeting with Precision
+## Targeting with Precision
 
 * **:is():** Imagine a single selector that handles both "active" buttons and highlighted links. :is() lets you do just
   that! Simply list the element types, classes, or IDs you want to target, separated by commas.
@@ -52,7 +52,7 @@ navigation stand out.
 This code targets any element with the class "container" that has an img element as a child, creating a clean and
 consistent look for your image-rich sections.
 
-## 2. Dynamically Adapting Styles
+## Dynamically Adapting Styles
 
 * **:target:** Ever wanted to highlight a specific section when a user scrolls to it using a URL fragment? :target is
   your answer! It targets the element whose ID matches the current fragment identifier, allowing for dynamic styling
@@ -84,7 +84,7 @@ ul li:nth-child(2n) {
 This code styles every second list item (even-numbered) in a bulleted list with bold text, creating a visually appealing
 rhythm.
 
-## 3. Enhanced Form Interactions
+## Enhanced Form Interactions
 
 * **:checked, :indeterminate, :disabled:** Want to visually distinguish checked checkboxes, partially filled radio
   buttons, and inactive input fields? These pseudo-classes are your allies! They target form elements based on their
