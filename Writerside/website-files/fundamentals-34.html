@@ -1,0 +1,47 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1458725"><meta name="build-number" content="${buildNumber}">       <title>CSS Float &amp; Clear | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"float-property","level":0,"title":"Float Property","anchor":"#float-property"},{"id":"clear-property","level":0,"title":"Clear Property","anchor":"#clear-property"},{"id":"clearfix-hack","level":0,"title":"Clearfix Hack","anchor":"#clearfix-hack"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Float &amp; Clear | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-34.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Float &amp; Clear | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-34.html#webpage", "url": "fundamentals-34.html", "name": "CSS Float &amp; Clear | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-34" data-main-title="CSS Float &amp; Clear" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-34"   id="Fundamentals-34.md">CSS Float &amp; Clear</h1>  <section class="chapter"><h2 id="float-property" data-toc="float-property"   >Float Property</h2><p id="2d8c8337_2087">The <code class="code" id="2d8c8337_2088">float</code> property in CSS is used to position an element to the left or right within its containing element. It is commonly used for creating layouts where elements appear side by side. The floated element is removed from the normal flow of the document, and the surrounding content flows around it.</p><section class="chapter"><h3 id="basic-syntax" data-toc="basic-syntax"   >Basic Syntax</h3><div class="code-block" data-lang="css"         >
+/* Float an element to the left */
+.float-left {
+  float: left;
+}
+
+/* Float an element to the right */
+.float-right {
+  float: right;
+}
+</div><p id="2d8c8337_2090"><span class="control" id="2d8c8337_2091">Example</span></p><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;float-left&quot;&gt;Left Floated Content&lt;/div&gt;
+&lt;div class=&quot;float-right&quot;&gt;Right Floated Content&lt;/div&gt;
+&lt;p&gt;This is the normal flow of content.&lt;/p&gt;
+</div><p id="2d8c8337_2093">In this example, the &quot;Left Floated Content&quot; will appear on the left, the &quot;Right Floated Content&quot; will appear on the right, and the normal paragraph will flow around them.</p></section></section><section class="chapter"><h2 id="clear-property" data-toc="clear-property"   >Clear Property</h2><p id="2d8c8337_2094">The <code class="code" id="2d8c8337_2095">clear</code> property is used to specify whether an element should be positioned next to (on the left or right) or below the floating elements. It is often used to prevent unwanted wrapping around floated elements.</p><p id="2d8c8337_2096"><span class="control" id="2d8c8337_2097">Basic Syntax</span></p><div class="code-block" data-lang="css"         >
+/* Clear elements next to the floated elements */
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+</div><p id="2d8c8337_2099"><span class="control" id="2d8c8337_2100">Example</span></p><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;float-left&quot;&gt;Left Floated Content&lt;/div&gt;
+&lt;div class=&quot;float-right&quot;&gt;Right Floated Content&lt;/div&gt;
+&lt;div class=&quot;clear-both&quot;&gt;This content will appear below the floated elements.&lt;/div&gt;
+</div><p id="2d8c8337_2102">In this example, the &quot;Left Floated Content&quot; and &quot;Right Floated Content&quot; are followed by an element with the class &quot; clear-both,&quot; causing it to appear below both floated elements.</p></section><section class="chapter"><h2 id="clearfix-hack" data-toc="clearfix-hack"   >Clearfix Hack</h2><p id="2d8c8337_2103">When using floats, it's common to encounter a problem where the containing element doesn't fully wrap around the floated elements. The clearfix hack is a technique to fix this issue.</p><p id="2d8c8337_2104"><span class="control" id="2d8c8337_2105">Example</span></p><div class="code-block" data-lang="css"         >
+/* Clearfix hack */
+.clearfix::after {
+  content: &quot;&quot;;
+  display: table;
+  clear: both;
+}
+</div><p id="2d8c8337_2107">Apply the <code class="code" id="2d8c8337_2108">clearfix</code> class to the containing element.</p><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;clearfix&quot;&gt;
+    &lt;div class=&quot;float-left&quot;&gt;Left Floated Content&lt;/div&gt;
+    &lt;div class=&quot;float-right&quot;&gt;Right Floated Content&lt;/div&gt;
+&lt;/div&gt;
+</div></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="2d8c8337_2110">While the <code class="code" id="2d8c8337_2111">float</code> and <code class="code" id="2d8c8337_2112">clear</code> properties were once extensively used for layout purposes in CSS, it's essential to note that they are considered somewhat outdated for modern layout design. In contemporary web development, more robust layout mechanisms, such as Flexbox and Grid, are often preferred due to their superior flexibility and ease of use.</p><p id="2d8c8337_2113">However, understanding <code class="code" id="2d8c8337_2114">float</code> and <code class="code" id="2d8c8337_2115">clear</code> is still valuable, especially when dealing with older websites or legacy code. Legacy projects might rely on these properties, and knowing how they work can be crucial for maintaining or updating such codebases.</p><p id="2d8c8337_2116">As you delve into modern CSS layout techniques like Flexbox and Grid, keep in mind that the historical context of <code class="code" id="2d8c8337_2117">float</code> and <code class="code" id="2d8c8337_2118">clear</code> contributes to a comprehensive understanding of CSS. Always strive to use the most appropriate and up-to-date approaches for contemporary web development projects.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-31.html">CSS Media Queries</a>   <a class="navigation-links__next" href="fundamentals-38.html">CSS Flexbox</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

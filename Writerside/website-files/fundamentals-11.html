@@ -1,0 +1,45 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.2180537"><meta name="build-number" content="${buildNumber}">       <title>Semantic Tags in HTML | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"introduction","level":0,"title":"Introduction","anchor":"#introduction"},{"id":"what-are-semantic-tags","level":0,"title":"What are Semantic Tags?","anchor":"#what-are-semantic-tags"},{"id":"semantic-tags-examples","level":0,"title":"Semantic Tags Examples","anchor":"#semantic-tags-examples"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Semantic Tags in HTML | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-11.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Semantic Tags in HTML | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-11.html#webpage", "url": "fundamentals-11.html", "name": "Semantic Tags in HTML | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-11" data-main-title="Semantic Tags in HTML" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="HTML-Fundamentals.topic|HTML Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-11"   id="Fundamentals-11.md">Semantic Tags in HTML</h1>  <section class="chapter"><h2 id="introduction" data-toc="introduction"   >Introduction</h2><p id="4aca14e4_2188">Welcome to the realm of Semantic HTML! In this comprehensive guide, we'll explore the significance of semantic tags in HTML, uncovering how they contribute to a well-structured and accessible web document. Semantic HTML not only enhances the clarity of your code but also plays a crucial role in search engine optimization and overall web accessibility.</p></section><section class="chapter"><h2 id="what-are-semantic-tags" data-toc="what-are-semantic-tags"   >What are Semantic Tags?</h2><p id="4aca14e4_2189">Semantic tags in HTML are elements that carry meaning about the structure and content of a webpage. Unlike non-semantic tags (like <code class="code" id="4aca14e4_2190">&lt;div&gt;</code> and <code class="code" id="4aca14e4_2191">&lt;span&gt;</code>), semantic tags provide context to both browsers and developers, making the code more meaningful and understandable.</p></section><section class="chapter"><h2 id="semantic-tags-examples" data-toc="semantic-tags-examples"   >Semantic Tags Examples</h2><section class="chapter"><h3 id="1-header" data-toc="1-header"   >1. &lt;header&gt;</h3><p id="4aca14e4_2192">The <code class="code" id="4aca14e4_2193">&lt;header&gt;</code> tag represents the introductory content, typically containing headings, logos, navigation menus, or other introductory elements.</p><div class="code-block" data-lang="markup"         >
+
+&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</div></section><section class="chapter"><h3 id="2-nav" data-toc="2-nav"   >2. &lt;nav&gt;</h3><p id="4aca14e4_2195">The <code class="code" id="4aca14e4_2196">&lt;nav&gt;</code> tag defines a navigation menu, providing a semantic container for navigation links.</p><div class="code-block" data-lang="markup"         >
+
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</div></section><section class="chapter"><h3 id="3-article" data-toc="3-article"   >3. &lt;article&gt;</h3><p id="4aca14e4_2198">The <code class="code" id="4aca14e4_2199">&lt;article&gt;</code> tag represents a self-contained piece of content that can be distributed and reused independently, such as a news article or blog post.</p><div class="code-block" data-lang="markup"         >
+
+&lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Article content goes here.&lt;/p&gt;
+&lt;/article&gt;
+</div></section><section class="chapter"><h3 id="4-section" data-toc="4-section"   >4. &lt;section&gt;</h3><p id="4aca14e4_2201">The <code class="code" id="4aca14e4_2202">&lt;section&gt;</code> tag defines a thematic grouping of content, often containing a heading. It helps organize content into meaningful sections.</p><div class="code-block" data-lang="markup"         >
+
+&lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;Section content goes here.&lt;/p&gt;
+&lt;/section&gt;
+</div></section><section class="chapter"><h3 id="5-aside" data-toc="5-aside"   >5. &lt;aside&gt;</h3><p id="4aca14e4_2204">The <code class="code" id="4aca14e4_2205">&lt;aside&gt;</code> tag represents content that is tangentially related to the content around it. It's often used for sidebars or pull quotes.</p><div class="code-block" data-lang="markup"         >
+
+&lt;aside&gt;
+    &lt;h3&gt;Related Content&lt;/h3&gt;
+    &lt;p&gt;Additional information or links.&lt;/p&gt;
+&lt;/aside&gt;
+</div></section><section class="chapter"><h3 id="6-footer" data-toc="6-footer"   >6. &lt;footer&gt;</h3><p id="4aca14e4_2207">The <code class="code" id="4aca14e4_2208">&lt;footer&gt;</code> tag defines the footer of a webpage, typically containing metadata, copyright information, or links to related pages.</p><div class="code-block" data-lang="markup"         >
+
+&lt;footer&gt;
+    &lt;p&gt;2023 My Website. All rights reserved.&lt;/p&gt;
+&lt;/footer&gt;
+</div></section></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="4aca14e4_2210">In conclusion, leveraging semantic tags in HTML enhances the structure, meaning, and accessibility of your web documents. By using tags like <code class="code" id="4aca14e4_2211">&lt;header&gt;</code>, <code class="code" id="4aca14e4_2212">&lt;nav&gt;</code>, <code class="code" id="4aca14e4_2213">&lt;article&gt;</code>, <code class="code" id="4aca14e4_2214">&lt;section&gt;</code>, <code class="code" id="4aca14e4_2215">&lt;aside&gt;</code>, and <code class="code" id="4aca14e4_2216">&lt;footer&gt;</code>, you provide valuable information to both browsers and developers, resulting in cleaner, more maintainable code. Embrace semantic HTML for a more user-friendly and search engine-optimized web experience.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-10.html">Video, Audio &amp; Media in HTML</a>   <a class="navigation-links__next" href="fundamentals-13.html">Entities, Code tag and more on HTML</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

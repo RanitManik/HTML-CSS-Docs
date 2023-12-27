@@ -1,0 +1,49 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1899686"><meta name="build-number" content="${buildNumber}">       <title>CSS Z-index and Order | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"z-index","level":0,"title":"z-index","anchor":"#z-index"},{"id":"order","level":0,"title":"order","anchor":"#order"},{"id":"combining-z-index-and-order","level":0,"title":"Combining z-index and order","anchor":"#combining-z-index-and-order"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Z-index and Order | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="extra-02.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Z-index and Order | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "extra-02.html#webpage", "url": "extra-02.html", "name": "CSS Z-index and Order | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Extra-02" data-main-title="CSS Z-index and Order" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Extra-02"   id="Extra-02.md">CSS Z-index and Order</h1>  <p id="e18a8911_2352">In CSS, <code class="code" id="e18a8911_2353">z-index</code> and the <code class="code" id="e18a8911_2354">order</code> property are used to control the stacking order of elements, but they are applied in different contexts.</p><section class="chapter"><h2 id="z-index" data-toc="z-index"   >z-index</h2><p id="e18a8911_2355">The <code class="code" id="e18a8911_2356">z-index</code> property is used to control the stacking order of positioned elements along the z-axis. Elements with a higher <code class="code" id="e18a8911_2357">z-index</code> value are stacked above elements with a lower value. If two elements have the same <code class="code" id="e18a8911_2358">z-index</code>, their stacking order is determined by their order in the HTML document (the element that comes later in the document will be stacked on top).</p><p id="e18a8911_2359"><span class="control" id="e18a8911_2360">Example</span></p><div class="code-block" data-lang="css"         >
+div {
+  position: absolute;
+  z-index: 2;
+}
+
+p {
+  position: absolute;
+  z-index: 1;
+}
+</div><p id="e18a8911_2362">In this example, the <code class="code" id="e18a8911_2363">div</code> with a <code class="code" id="e18a8911_2364">z-index</code> of 2 will be stacked above the <code class="code" id="e18a8911_2365">p</code> with a <code class="code" id="e18a8911_2366">z-index</code> of 1.</p></section><section class="chapter"><h2 id="order" data-toc="order"   >order</h2><p id="e18a8911_2367">The <code class="code" id="e18a8911_2368">order</code> property is part of Flexbox and Grid layout systems and is used to specify the order of flex or grid items within their container. It does not affect the stacking order along the z-axis.</p><p id="e18a8911_2369"><span class="control" id="e18a8911_2370">Example (Flexbox)</span></p><div class="code-block" data-lang="css"         >
+.container {
+  display: flex;
+}
+
+.item1 {
+  order: 2;
+}
+
+.item2 {
+  order: 1;
+}
+</div><p id="e18a8911_2372">In this example, <code class="code" id="e18a8911_2373">item1</code> will be displayed before <code class="code" id="e18a8911_2374">item2</code> in the flex container, despite the default order in the HTML.</p><p id="e18a8911_2375">It's important to note that the <code class="code" id="e18a8911_2376">order</code> property only works within a flex container or a grid container. If you're not using Flexbox or Grid, it won't have any effect.</p></section><section class="chapter"><h2 id="combining-z-index-and-order" data-toc="combining-z-index-and-order"   >Combining z-index and order</h2><p id="e18a8911_2377">If you're working with a combination of positioned elements and Flexbox/Grid layouts, it's important to understand that <code class="code" id="e18a8911_2378">z-index</code> and <code class="code" id="e18a8911_2379">order</code> operate independently of each other. <code class="code" id="e18a8911_2380">z-index</code> influences the stacking order in the z-axis for positioned elements, while <code class="code" id="e18a8911_2381">order</code> influences the order of flex/grid items within their containers.</p><p id="e18a8911_2382"><span class="control" id="e18a8911_2383">Example</span></p><div class="code-block" data-lang="css"         >
+.container {
+  position: relative;
+}
+
+.item1 {
+  position: absolute;
+  z-index: 2;
+}
+
+.item2 {
+  position: absolute;
+  z-index: 1;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item1 {
+  order: 2;
+}
+
+.flex-item2 {
+  order: 1;
+}
+</div><p id="e18a8911_2385">In this example, the <code class="code" id="e18a8911_2386">item1</code> with a higher <code class="code" id="e18a8911_2387">z-index</code> will be stacked above <code class="code" id="e18a8911_2388">item2</code> in the z-axis, regardless of their order in the HTML. Meanwhile, within the Flexbox container, <code class="code" id="e18a8911_2389">flex-item1</code> will be visually displayed after <code class="code" id="e18a8911_2390">flex-item2</code> based on their <code class="code" id="e18a8911_2391">order</code> values.</p><p id="e18a8911_2392">Understanding how <code class="code" id="e18a8911_2393">z-index</code> and <code class="code" id="e18a8911_2394">order</code> work in their respective contexts allows you to control both the stacking and visual order of elements, providing flexibility in designing complex layouts.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-38.html">CSS Flexbox</a>   <a class="navigation-links__next" href="fundamentals-39.html">CSS Grid</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

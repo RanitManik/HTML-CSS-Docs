@@ -1,0 +1,80 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.206013"><meta name="build-number" content="${buildNumber}">       <title>HTML Fundamentals: Building the Web | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"elements-the-foundation-of-html","level":0,"title":"Elements: The Foundation of HTML","anchor":"#elements-the-foundation-of-html"},{"id":"html-tags-structuring-content","level":0,"title":"HTML Tags: Structuring Content","anchor":"#html-tags-structuring-content"},{"id":"attributes-enhancing-elements","level":0,"title":"Attributes: Enhancing Elements","anchor":"#attributes-enhancing-elements"},{"id":"nesting-elements","level":0,"title":"Nesting Elements","anchor":"#nesting-elements"},{"id":"html-document-structure","level":0,"title":"HTML Document Structure","anchor":"#html-document-structure"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="HTML Fundamentals: Building the Web | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-03.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="HTML Fundamentals: Building the Web | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-03.html#webpage", "url": "fundamentals-03.html", "name": "HTML Fundamentals: Building the Web | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-03" data-main-title="HTML Fundamentals: Building the Web" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="HTML-Fundamentals.topic|HTML Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-03"   id="Fundamentals-03.md">HTML Fundamentals: Building the Web</h1>  <p id="b150e020_5187">HTML, or HyperText Markup Language, forms the backbone of the World Wide Web. It serves as the standard markup language for creating web pages, employing key components such as elements and attributes.</p><section class="chapter"><h2 id="elements-the-foundation-of-html" data-toc="elements-the-foundation-of-html"   >Elements: The Foundation of HTML</h2><p id="b150e020_5188">At its essence, HTML relies on elements as the fundamental building blocks of a web page. Each HTML element comprises a start tag, content, and an end tag. The start tag initiates the element, the end tag concludes it, and the content lies between them.</p><p id="b150e020_5189">To illustrate, crafting a paragraph involves the <code class="code" id="b150e020_5190">&lt;p&gt;</code> element:</p><div class="code-block" data-lang="markup"         >
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</div><p id="b150e020_5192">In this example, <code class="code" id="b150e020_5193">&lt;p&gt;</code> marks the start, <code class="code" id="b150e020_5194">&lt;/p&gt;</code> denotes the end, and &quot;This is a paragraph.&quot; constitutes the content.</p><p id="b150e020_5195">Certain elements, like line breaks, dispense with an end tag:</p><div class="code-block" data-lang="markup"         >
+&lt;br&gt;
+</div></section><section class="chapter"><h2 id="html-tags-structuring-content" data-toc="html-tags-structuring-content"   >HTML Tags: Structuring Content</h2><p id="b150e020_5197">HTML utilizes tags, enclosed in angle brackets (&quot;&lt;&quot; and &quot;&gt;&quot;), in pairs with opening and closing counterparts. Here are examples of HTML tags:</p><ol class="list _decimal" id="b150e020_5198" type="1"><li class="list__item" id="b150e020_5199"><p id="b150e020_5200"><span class="control" id="b150e020_5201">Paragraph Tag:</span></p><div class="code-block" data-lang="markup"         >
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</div></li><li class="list__item" id="b150e020_5203"><p id="b150e020_5204"><span class="control" id="b150e020_5205">Heading Tags:</span></p><div class="code-block" data-lang="markup"         >
+&lt;h1&gt;This is a heading level 1&lt;/h1&gt;
+&lt;h2&gt;This is a heading level 2&lt;/h2&gt;
+&lt;!-- ... up to h6 --&gt;
+</div></li><li class="list__item" id="b150e020_5207"><p id="b150e020_5208"><span class="control" id="b150e020_5209">Anchor Tag (Link):</span></p><div class="code-block" data-lang="markup"         >
+&lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example.com&lt;/a&gt;
+</div></li><li class="list__item" id="b150e020_5211"><p id="b150e020_5212"><span class="control" id="b150e020_5213">Image Tag:</span></p><div class="code-block" data-lang="markup"         >
+&lt;img src=&quot;image.jpg&quot; alt=&quot;Description of the image&quot;&gt;
+</div></li><li class="list__item" id="b150e020_5215"><p id="b150e020_5216"><span class="control" id="b150e020_5217">List Tags:</span></p><div class="code-block" data-lang="markup"         >
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+</div></li><li class="list__item" id="b150e020_5219"><p id="b150e020_5220"><span class="control" id="b150e020_5221">Div Tag (Division/Container):</span></p><div class="code-block" data-lang="markup"         >
+&lt;div&gt;This is a container&lt;/div&gt;
+</div></li><li class="list__item" id="b150e020_5223"><p id="b150e020_5224"><span class="control" id="b150e020_5225">Form Tags:</span></p><div class="code-block" data-lang="markup"         >
+&lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;
+    &lt;!-- Form elements go here --&gt;
+&lt;/form&gt;
+</div></li><li class="list__item" id="b150e020_5227"><p id="b150e020_5228"><span class="control" id="b150e020_5229">Input Tag:</span></p><div class="code-block" data-lang="markup"         >
+&lt;input type=&quot;text&quot; name=&quot;username&quot; placeholder=&quot;Enter your username&quot;&gt;
+</div></li><li class="list__item" id="b150e020_5231"><p id="b150e020_5232"><span class="control" id="b150e020_5233">Button Tag:</span></p><div class="code-block" data-lang="markup"         >
+&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+</div></li><li class="list__item" id="b150e020_5235"><p id="b150e020_5236"><span class="control" id="b150e020_5237">Table Tags:</span></p><div class="code-block" data-lang="markup"         >
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</div></li></ol><p id="b150e020_5239">These examples showcase the versatility of HTML tags for diverse purposes.</p></section><section class="chapter"><h2 id="attributes-enhancing-elements" data-toc="attributes-enhancing-elements"   >Attributes: Enhancing Elements</h2><p id="b150e020_5240">Attributes furnish additional information about HTML elements, residing in the opening tag. Comprising a name and a value, attributes modify an element's behavior or appearance.</p><p id="b150e020_5241">Consider the image element (<code class="code" id="b150e020_5242">&lt;img&gt;</code>):</p><div class="code-block" data-lang="markup"         >
+&lt;img src=&quot;image.jpg&quot; alt=&quot;An example image&quot;&gt;
+</div><p id="b150e020_5244">Here, <code class="code" id="b150e020_5245">src</code> is an attribute with the value &quot;image.jpg,&quot; and <code class="code" id="b150e020_5246">alt</code> provides alternative text for the image.</p><section class="chapter"><h3 id="common-html-elements" data-toc="common-html-elements"   >Common HTML Elements</h3><ol class="list _decimal" id="b150e020_5247" type="1"><li class="list__item" id="b150e020_5248"><p id="b150e020_5249"><span class="control" id="b150e020_5250">Headings (<code class="code" id="b150e020_5251">&lt;h1&gt;</code> to <code class="code" id="b150e020_5252">&lt;h6&gt;</code>):</span></p><div class="code-block" data-lang="markup"         >
+&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+</div></li><li class="list__item" id="b150e020_5254"><p id="b150e020_5255"><span class="control" id="b150e020_5256">Paragraph (<code class="code" id="b150e020_5257">&lt;p&gt;</code>):</span></p><div class="code-block" data-lang="markup"         >
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</div></li><li class="list__item" id="b150e020_5259"><p id="b150e020_5260"><span class="control" id="b150e020_5261">Links (<code class="code" id="b150e020_5262">&lt;a&gt;</code>):</span></p><div class="code-block" data-lang="markup"         >
+&lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example.com&lt;/a&gt;
+</div></li><li class="list__item" id="b150e020_5264"><p id="b150e020_5265"><span class="control" id="b150e020_5266">Lists (<code class="code" id="b150e020_5267">&lt;ul&gt;</code>, <code class="code" id="b150e020_5268">&lt;ol&gt;</code>, <code class="code" id="b150e020_5269">&lt;li&gt;</code>):</span></p><div class="code-block" data-lang="markup"         >
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+</div></li><li class="list__item" id="b150e020_5271"><p id="b150e020_5272"><span class="control" id="b150e020_5273">Images (<code class="code" id="b150e020_5274">&lt;img&gt;</code>):</span></p><div class="code-block" data-lang="markup"         >
+&lt;img src=&quot;image.jpg&quot; alt=&quot;An example image&quot;&gt;
+</div></li></ol></section></section><section class="chapter"><h2 id="nesting-elements" data-toc="nesting-elements"   >Nesting Elements</h2><p id="b150e020_5276">HTML elements can nest within each other, forming a hierarchical structure:</p><div class="code-block" data-lang="markup"         >
+
+&lt;div&gt;
+    &lt;h2&gt;Heading inside a Div&lt;/h2&gt;
+    &lt;p&gt;Paragraph inside the Div.&lt;/p&gt;
+&lt;/div&gt;
+</div><p id="b150e020_5278">Here, <code class="code" id="b150e020_5279">&lt;h2&gt;</code> and <code class="code" id="b150e020_5280">&lt;p&gt;</code> nest within <code class="code" id="b150e020_5281">&lt;div&gt;</code> (division).</p></section><section class="chapter"><h2 id="html-document-structure" data-toc="html-document-structure"   >HTML Document Structure</h2><p id="b150e020_5282">A standard HTML document comprises a doctype declaration (<code class="code" id="b150e020_5283">&lt;!DOCTYPE html&gt;</code>), opening and closing HTML tags (<code class="code" id="b150e020_5284">&lt;html&gt;</code>), head and body sections, and metadata.</p><div class="code-block" data-lang="markup"         >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</div></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="b150e020_5286">Mastery of HTML, encompassing elements and attributes, is crucial for aspiring web developers. These foundational components provide the structure and content for dynamic web pages. As you delve deeper into web development, encountering a plethora of elements and attributes, you embark on a journey towards creating immersive online experiences. Proficiency in HTML is the cornerstone for mastering other web technologies.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-01.html">Installing VS Code &amp; How Websites Work</a>   <a class="navigation-links__next" href="fundamentals-04.html">HTML Headings, Paragraphs &amp; links</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

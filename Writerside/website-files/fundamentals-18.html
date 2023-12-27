@@ -1,0 +1,100 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1488739"><meta name="build-number" content="${buildNumber}">       <title>CSS Box Model - Margin, Padding &amp; Borders | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"introduction","level":0,"title":"Introduction","anchor":"#introduction"},{"id":"css-box-model","level":0,"title":"CSS Box Model","anchor":"#css-box-model"},{"id":"css-border","level":0,"title":"CSS Border","anchor":"#css-border"},{"id":"border-radius","level":0,"title":"Border Radius","anchor":"#border-radius"},{"id":"css-padding","level":0,"title":"CSS padding","anchor":"#css-padding"},{"id":"css-margin","level":0,"title":"CSS margin","anchor":"#css-margin"},{"id":"margin-collapse","level":0,"title":"Margin Collapse","anchor":"#margin-collapse"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Box Model - Margin, Padding &amp; Borders | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-18.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Box Model - Margin, Padding &amp; Borders | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-18.html#webpage", "url": "fundamentals-18.html", "name": "CSS Box Model - Margin, Padding &amp; Borders | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-18" data-main-title="CSS Box Model - Margin, Padding &amp; Borders" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-18"   id="Fundamentals-18.md">CSS Box Model - Margin, Padding &amp; Borders</h1>  <section class="chapter"><h2 id="introduction" data-toc="introduction"   >Introduction</h2><p id="1376fea0_5525">Welcome to an essential exploration of the CSS Box Model and the intriguing phenomenon known as Margin Collapse. In this guide, we'll unravel the structural foundation of CSS, providing insights into how elements are visually rendered on web pages. Join us on this journey to gain a deeper understanding of the building blocks that shape the layout and spacing of your HTML elements.</p></section><section class="chapter"><h2 id="css-box-model" data-toc="css-box-model"   >CSS Box Model</h2><p id="1376fea0_5526">The CSS Box Model is a fundamental concept that defines the layout and spacing of elements on a web page. Each HTML element can be visualized as a rectangular box comprising four crucial components: content, padding, border, and margin.</p><section class="chapter"><h3 id="components-of-the-box-model" data-toc="components-of-the-box-model"   >Components of the Box Model:</h3><ul class="list _ul" id="1376fea0_5527"><li class="list__item" id="1376fea0_5528"><p><span class="control" id="1376fea0_5529">Content:</span> The actual content or text within the element.</p></li><li class="list__item" id="1376fea0_5530"><p><span class="control" id="1376fea0_5531">Padding:</span> The space between the content and the element's border.</p></li><li class="list__item" id="1376fea0_5532"><p><span class="control" id="1376fea0_5533">Border:</span> A border surrounding the padding (if any).</p></li><li class="list__item" id="1376fea0_5534"><p><span class="control" id="1376fea0_5535">Margin:</span> The space outside the border, creating distance between adjacent elements.</p></li></ul><p id="1376fea0_5536">Understanding the Box Model is pivotal for crafting precise layouts and achieving the desired spacing between elements.</p></section></section><section class="chapter"><h2 id="css-border" data-toc="css-border"   >CSS Border</h2><p id="1376fea0_5537">The <code class="code" id="1376fea0_5538">border</code> property in CSS is a shorthand property that allows you to set the width, style, and color of all four borders (top, right, bottom, and left) of an element in a single declaration.</p><p id="1376fea0_5539">The syntax for the <code class="code" id="1376fea0_5540">border</code> property is as follows:</p><div class="code-block" data-lang="css"         >
+border: [border-width] [border-style] [border-color];
+</div><p id="1376fea0_5542">You can use one, two, or all three values in the declaration, and they will be applied to the respective properties ( width, style, and color). Here's a breakdown of each part:</p><ol class="list _decimal" id="1376fea0_5543" type="1"><li class="list__item" id="1376fea0_5544"><p id="1376fea0_5545"><span class="control" id="1376fea0_5546"><code class="code" id="1376fea0_5547">border-width</code></span>: Specifies the width of the border. You can use values like <code class="code" id="1376fea0_5548">thin</code>, <code class="code" id="1376fea0_5549">medium</code>, <code class="code" id="1376fea0_5550">thick</code>, or specific measurements like <code class="code" id="1376fea0_5551">1px</code>, <code class="code" id="1376fea0_5552">2px</code>, etc. You can also set different widths for each side using individual properties like <code class="code" id="1376fea0_5553">border-top-width</code>, <code class="code" id="1376fea0_5554">border-right-width</code>, etc.</p></li><li class="list__item" id="1376fea0_5555"><p id="1376fea0_5556"><span class="control" id="1376fea0_5557"><code class="code" id="1376fea0_5558">border-style</code></span>: Specifies the style of the border. Common values include <code class="code" id="1376fea0_5559">solid</code>, <code class="code" id="1376fea0_5560">dashed</code>, <code class="code" id="1376fea0_5561">dotted</code>, <code class="code" id="1376fea0_5562">double</code>, and others. Like with <code class="code" id="1376fea0_5563">border-width</code>, you can set different styles for each side using individual properties like <code class="code" id="1376fea0_5564">border-top-style</code>, <code class="code" id="1376fea0_5565">border-right-style</code>, etc.</p></li><li class="list__item" id="1376fea0_5566"><p id="1376fea0_5567"><span class="control" id="1376fea0_5568"><code class="code" id="1376fea0_5569">border-color</code></span>: Specifies the color of the border. You can use color names, hexadecimal values, RGB values, or other valid color representations. As with the previous properties, you can set different colors for each side using individual properties like <code class="code" id="1376fea0_5570">border-top-color</code>, <code class="code" id="1376fea0_5571">border-right-color</code>, etc.</p></li></ol><p id="1376fea0_5572">Here's an example using all three values:</p><div class="code-block" data-lang="css"         >
+.element {
+  border: 2px solid #333;
+}
+</div><p id="1376fea0_5574">This sets a 2-pixel wide solid border with the color <code class="code" id="1376fea0_5575">#333</code> for all sides of the <code class="code" id="1376fea0_5576">.element</code>. You can customize these values based on your design requirements.</p><p id="1376fea0_5577">In addition to the <code class="code" id="1376fea0_5578">border</code> shorthand, you can also use individual properties (<code class="code" id="1376fea0_5579">border-width</code>, <code class="code" id="1376fea0_5580">border-style</code>, <code class="code" id="1376fea0_5581">border-color</code>) and set them separately if you need more control over each aspect of the border styling.</p></section><section class="chapter"><h2 id="border-radius" data-toc="border-radius"   >Border Radius</h2><p id="1376fea0_5582">In CSS, the <code class="code" id="1376fea0_5583">border-radius</code> property is used to define rounded corners for an element's border. It can be applied to both block-level and inline-level elements. The <code class="code" id="1376fea0_5584">border-radius</code> property takes one to four values, representing the radius of the corners.</p><p id="1376fea0_5585">Here's the basic syntax for the <code class="code" id="1376fea0_5586">border-radius</code> property:</p><div class="code-block" data-lang="css"         >
+/* Syntax: border-radius: [top-left] [top-right] [bottom-right] [bottom-left]; */
+
+/* Example */
+.element {
+  border-radius: 10px 20px 15px 5px; /* Top-left, Top-right, Bottom-right, Bottom-left */
+}
+</div><p id="1376fea0_5588">In this example:</p><ul class="list _ul" id="1376fea0_5589"><li class="list__item" id="1376fea0_5590"><p><code class="code" id="1376fea0_5591">10px</code> is the radius for the top-left corner,</p></li><li class="list__item" id="1376fea0_5592"><p><code class="code" id="1376fea0_5593">20px</code> is the radius for the top-right corner,</p></li><li class="list__item" id="1376fea0_5594"><p><code class="code" id="1376fea0_5595">15px</code> is the radius for the bottom-right corner, and</p></li><li class="list__item" id="1376fea0_5596"><p><code class="code" id="1376fea0_5597">5px</code> is the radius for the bottom-left corner.</p></li></ul><p id="1376fea0_5598">If you provide only one value, it will apply to all four corners. If you provide two values, the first one will be the radius for the top-left and bottom-right corners, and the second one will be the radius for the top-right and bottom-left corners. If you provide three values, the first one will be the radius for the top-left corner, the second will be the radius for the top-right and bottom-left corners, and the third will be the radius for the bottom-right corner.</p><p id="1376fea0_5599">Here are a few examples:</p><div class="code-block" data-lang="css"         >
+/* Applying the same border radius to all corners */
+.element {
+  border-radius: 15px;
+}
+
+/* Applying different border radius to the top/bottom and right/left corners */
+.element {
+  border-radius: 10px 20px;
+}
+
+/* Applying different border radius to all corners */
+.element {
+  border-radius: 10px 20px 15px 5px;
+}
+</div><p id="1376fea0_5601"><code class="code" id="1376fea0_5602">border-radius</code> is a useful property for creating visually appealing designs with rounded corners. Adjust the values based on your design requirements.</p></section><section class="chapter"><h2 id="css-padding" data-toc="css-padding"   >CSS padding</h2><p id="1376fea0_5603">In CSS (Cascading Style Sheets), the <code class="code" id="1376fea0_5604">padding</code> property is used to set the space between an element's content and its border. It defines the internal spacing within an element. Like the <code class="code" id="1376fea0_5605">margin</code> property, the <code class="code" id="1376fea0_5606">padding</code> property can be set for individual sides (top, right, bottom, left) or for all sides at once.</p><p id="1376fea0_5607">Here is the basic syntax for the <code class="code" id="1376fea0_5608">padding</code> property:</p><div class="code-block" data-lang="css"         >
+/* Set padding for all sides */
+padding: value;
+
+/* Set padding for individual sides */
+padding-top: value;
+padding-right: value;
+padding-bottom: value;
+padding-left: value;
+</div><p id="1376fea0_5610">The <code class="code" id="1376fea0_5611">value</code> can be specified in various units such as pixels (<code class="code" id="1376fea0_5612">px</code>), ems (<code class="code" id="1376fea0_5613">em</code>), rems (<code class="code" id="1376fea0_5614">rem</code>), percentages (%), etc. You can also use the <code class="code" id="1376fea0_5615">auto</code> value or specific keywords like <code class="code" id="1376fea0_5616">inherit</code>, <code class="code" id="1376fea0_5617">initial</code>, or <code class="code" id="1376fea0_5618">unset</code>.</p><p id="1376fea0_5619">Example of setting padding for all sides:</p><div class="code-block" data-lang="css"         >
+/* Set padding to 10 pixels for all sides */
+padding: 10px;
+</div><p id="1376fea0_5621">Example of setting padding for individual sides:</p><div class="code-block" data-lang="css"         >
+/* Set different padding for each side */
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 15px;
+padding-left: 25px;
+</div><p id="1376fea0_5623">You can also set shorthand values for <code class="code" id="1376fea0_5624">padding</code> to specify different values for each side in the order top, right, bottom, left:</p><div class="code-block" data-lang="css"         >
+/* Shorthand for specifying individual values */
+padding: 10px 20px 15px 25px;
+</div><p id="1376fea0_5626">If you provide only one value, it will be used for all sides. If you provide two values, the first value will be used for the top and bottom padding, and the second value for the right and left padding. If you provide three values, the third value will be used for the bottom padding.</p><div class="code-block" data-lang="css"         >
+/* Shorthand for specifying two or three values */
+padding: 10px 20px; /* top and bottom: 10px, right and left: 20px */
+padding: 10px 20px 15px; /* top: 10px, right and left: 20px, bottom: 15px */
+</div><p id="1376fea0_5628">The <code class="code" id="1376fea0_5629">padding</code> property is crucial for controlling the spacing within an element and plays a significant role in the overall layout of a webpage.</p></section><section class="chapter"><h2 id="css-margin" data-toc="css-margin"   >CSS margin</h2><p id="1376fea0_5630">In CSS (Cascading Style Sheets), the <code class="code" id="1376fea0_5631">margin</code> property is used to control the spacing outside the boundaries of an element. It defines the space between the element's border and adjacent elements in the layout. The <code class="code" id="1376fea0_5632">margin</code> property can be set for individual sides (top, right, bottom, left), or all sides at once.</p><p id="1376fea0_5633">Here is the basic syntax for the <code class="code" id="1376fea0_5634">margin</code> property:</p><div class="code-block" data-lang="css"         >
+/* Set margin for all sides */
+margin: value;
+
+/* Set margin for individual sides */
+margin-top: value;
+margin-right: value;
+margin-bottom: value;
+margin-left: value;
+</div><p id="1376fea0_5636">The <code class="code" id="1376fea0_5637">value</code> can be specified in various units such as pixels (<code class="code" id="1376fea0_5638">px</code>), ems (<code class="code" id="1376fea0_5639">em</code>), rems (<code class="code" id="1376fea0_5640">rem</code>), percentages (%), etc. You can also use the <code class="code" id="1376fea0_5641">auto</code> value or specific keywords like <code class="code" id="1376fea0_5642">inherit</code>, <code class="code" id="1376fea0_5643">initial</code>, or <code class="code" id="1376fea0_5644">unset</code>.</p><p id="1376fea0_5645">Example of setting margin for all sides:</p><div class="code-block" data-lang="css"         >
+/* Set margin to 10 pixels for all sides */
+margin: 10px;
+</div><p id="1376fea0_5647">Example of setting margin for individual sides:</p><div class="code-block" data-lang="css"         >
+/* Set different margins for each side */
+margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 15px;
+margin-left: 25px;
+</div><p id="1376fea0_5649">You can also set shorthand values for <code class="code" id="1376fea0_5650">margin</code> to specify different values for each side in the order top, right, bottom, left:</p><div class="code-block" data-lang="css"         >
+/* Shorthand for specifying individual values */
+margin: 10px 20px 15px 25px;
+</div><p id="1376fea0_5652">If you only provide one value, it will be used for all sides. If you provide two values, the first value will be used for the top and bottom margins, and the second value for the right and left margins. If you provide three values, the third value will be used for the bottom margin.</p><div class="code-block" data-lang="css"         >
+/* Shorthand for specifying two or three values */
+margin: 10px 20px; /* top and bottom: 10px, right and left: 20px */
+margin: 10px 20px 15px; /* top: 10px, right and left: 20px, bottom: 15px */
+</div><p id="1376fea0_5654">Using the <code class="code" id="1376fea0_5655">margin</code> property is essential for controlling the layout and spacing of elements on a webpage.</p></section><section class="chapter"><h2 id="margin-collapse" data-toc="margin-collapse"   >Margin Collapse</h2><p id="1376fea0_5656">Margin Collapse is a behavior in the CSS Box Model where the top and bottom margins of adjacent block-level elements collapse, resulting in a single margin space between them. This can have implications for the layout that may not be immediately intuitive.</p><section class="chapter"><h3 id="example" data-toc="example"   >Example:</h3><div class="code-block" data-lang="markup"         >
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        div {
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            padding: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+    &lt;p&gt;This is the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;p&gt;This is the second paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div><p id="1376fea0_5658">In this example, the margin between the two <code class="code" id="1376fea0_5659">&lt;div&gt;</code> elements collapses, resulting in a 20px margin instead of a cumulative 40px.</p></section></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="1376fea0_5660">In conclusion, mastering the CSS Box Model and understanding Margin Collapse are pivotal skills for web developers. These concepts form the backbone of layout design and spacing in HTML and CSS. As you apply this knowledge, you gain greater control over the visual structure of your web pages. Keep experimenting and refining your understanding to create beautifully structured and spaced web layouts. Happy coding!</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-17-02.html">Pseudo Selectors</a>   <a class="navigation-links__next" href="fundamentals-19.html">CSS Fonts, Text &amp; Color Properties</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1659178"><meta name="build-number" content="${buildNumber}">       <title>CSS Flexbox | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"introduction","level":0,"title":"Introduction","anchor":"#introduction"},{"id":"flex-container-and-flex-items","level":0,"title":"Flex Container and Flex Items","anchor":"#flex-container-and-flex-items"},{"id":"flex-direction","level":0,"title":"Flex Direction","anchor":"#flex-direction"},{"id":"justify-content","level":0,"title":"Justify Content","anchor":"#justify-content"},{"id":"align-items","level":0,"title":"Align Items","anchor":"#align-items"},{"id":"flex-wrap","level":0,"title":"Flex Wrap","anchor":"#flex-wrap"},{"id":"align-content","level":0,"title":"Align Content","anchor":"#align-content"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Flexbox | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-38.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Flexbox | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-38.html#webpage", "url": "fundamentals-38.html", "name": "CSS Flexbox | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-38" data-main-title="CSS Flexbox" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-38"   id="Fundamentals-38.md">CSS Flexbox</h1>  <p id="68d785b1_4341">Flexbox, or the Flexible Box Layout, is a layout model in CSS that allows the design of complex layouts and structures with a more efficient and predictable way than traditional models. Flexbox is particularly well-suited for designing dynamic and resizable layouts. Let's delve into the key concepts and properties of CSS Flexbox.</p><section class="chapter"><h2 id="introduction" data-toc="introduction"   >Introduction</h2><p id="68d785b1_4342">CSS Flexbox provides an efficient way to design layouts, align items, and distribute space within a container. It's especially useful for creating responsive designs and managing the arrangement of items in a row or column.</p></section><section class="chapter"><h2 id="flex-container-and-flex-items" data-toc="flex-container-and-flex-items"   >Flex Container and Flex Items</h2><ul class="list _ul" id="68d785b1_4343"><li class="list__item" id="68d785b1_4344"><p id="68d785b1_4345"><span class="control" id="68d785b1_4346">Flex Container:</span> The parent element becomes a flex container by setting its <code class="code" id="68d785b1_4347">display</code> property to <code class="code" id="68d785b1_4348">flex</code> or <code class="code" id="68d785b1_4349">inline-flex</code>. This establishes a flex formatting context for its children.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    display: flex; /* or inline-flex */
+}
+</div></li><li class="list__item" id="68d785b1_4351"><p id="68d785b1_4352"><span class="control" id="68d785b1_4353">Flex Items:</span> The direct children of a flex container are referred to as flex items. They automatically become flexible boxes that can be horizontally or vertically aligned.</p><div class="code-block" data-lang="css"         >
+.flex-item {
+    /* Styles for flex items */
+}
+</div></li></ul></section><section class="chapter"><h2 id="flex-direction" data-toc="flex-direction"   >Flex Direction</h2><p id="68d785b1_4355">The <code class="code" id="68d785b1_4356">flex-direction</code> property defines the direction of the main axis and the cross axis in the flex container. The main axis is the primary axis along which flex items are placed.</p><ul class="list _ul" id="68d785b1_4357"><li class="list__item" id="68d785b1_4358"><p id="68d785b1_4359"><span class="control" id="68d785b1_4360">Row:</span> Items are placed along the horizontal axis (default).</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    flex-direction: row;
+}
+</div></li><li class="list__item" id="68d785b1_4362"><p id="68d785b1_4363"><span class="control" id="68d785b1_4364">Column:</span> Items are placed along the vertical axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    flex-direction: column;
+}
+</div></li></ul></section><section class="chapter"><h2 id="justify-content" data-toc="justify-content"   >Justify Content</h2><p id="68d785b1_4366">The <code class="code" id="68d785b1_4367">justify-content</code> property aligns flex items along the main axis of the flex container.</p><ul class="list _ul" id="68d785b1_4368"><li class="list__item" id="68d785b1_4369"><p id="68d785b1_4370"><span class="control" id="68d785b1_4371">Flex Start:</span> Items are packed toward the start of the main axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    justify-content: flex-start;
+}
+</div></li><li class="list__item" id="68d785b1_4373"><p id="68d785b1_4374"><span class="control" id="68d785b1_4375">Flex End:</span> Items are packed toward the end of the main axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    justify-content: flex-end;
+}
+</div></li><li class="list__item" id="68d785b1_4377"><p id="68d785b1_4378"><span class="control" id="68d785b1_4379">Center:</span> Items are centered along the main axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    justify-content: center;
+}
+</div></li><li class="list__item" id="68d785b1_4381"><p id="68d785b1_4382"><span class="control" id="68d785b1_4383">Space Between:</span> Items are evenly distributed with the first item at the start and the last item at the end.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    justify-content: space-between;
+}
+</div></li><li class="list__item" id="68d785b1_4385"><p id="68d785b1_4386"><span class="control" id="68d785b1_4387">Space Around:</span> Items are evenly distributed with equal space around them.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    justify-content: space-around;
+}
+</div></li></ul></section><section class="chapter"><h2 id="align-items" data-toc="align-items"   >Align Items</h2><p id="68d785b1_4389">The <code class="code" id="68d785b1_4390">align-items</code> property aligns flex items along the cross axis of the flex container.</p><ul class="list _ul" id="68d785b1_4391"><li class="list__item" id="68d785b1_4392"><p id="68d785b1_4393"><span class="control" id="68d785b1_4394">Flex Start:</span> Items are packed toward the start of the cross axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-items: flex-start;
+}
+</div></li><li class="list__item" id="68d785b1_4396"><p id="68d785b1_4397"><span class="control" id="68d785b1_4398">Flex End:</span> Items are packed toward the end of the cross axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-items: flex-end;
+}
+</div></li><li class="list__item" id="68d785b1_4400"><p id="68d785b1_4401"><span class="control" id="68d785b1_4402">Center:</span> Items are centered along the cross axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-items: center;
+}
+</div></li><li class="list__item" id="68d785b1_4404"><p id="68d785b1_4405"><span class="control" id="68d785b1_4406">Baseline:</span> Items are aligned such that their baselines align.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-items: baseline;
+}
+</div></li><li class="list__item" id="68d785b1_4408"><p id="68d785b1_4409"><span class="control" id="68d785b1_4410">Stretch:</span> Items are stretched to fill the container.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-items: stretch;
+}
+</div></li></ul></section><section class="chapter"><h2 id="flex-wrap" data-toc="flex-wrap"   >Flex Wrap</h2><p id="68d785b1_4412">The <code class="code" id="68d785b1_4413">flex-wrap</code> property controls whether flex items are forced onto a single line or can wrap onto multiple lines.</p><ul class="list _ul" id="68d785b1_4414"><li class="list__item" id="68d785b1_4415"><p id="68d785b1_4416"><span class="control" id="68d785b1_4417">No Wrap:</span> All flex items are on one line (default).</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    flex-wrap: nowrap;
+}
+</div></li><li class="list__item" id="68d785b1_4419"><p id="68d785b1_4420"><span class="control" id="68d785b1_4421">Wrap:</span> Flex items can wrap onto multiple lines if needed.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    flex-wrap: wrap;
+}
+</div></li><li class="list__item" id="68d785b1_4423"><p id="68d785b1_4424"><span class="control" id="68d785b1_4425">Wrap Reverse:</span> Flex items wrap onto multiple lines in reverse order.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    flex-wrap: wrap-reverse;
+}
+</div></li></ul></section><section class="chapter"><h2 id="align-content" data-toc="align-content"   >Align Content</h2><p id="68d785b1_4427">The <code class="code" id="68d785b1_4428">align-content</code> property aligns a flex container's lines within the flex container when there's extra space on the cross axis.</p><ul class="list _ul" id="68d785b1_4429"><li class="list__item" id="68d785b1_4430"><p id="68d785b1_4431"><span class="control" id="68d785b1_4432">Flex Start:</span> Lines are packed toward the start of the cross axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-content: flex-start;
+}
+</div></li><li class="list__item" id="68d785b1_4434"><p id="68d785b1_4435"><span class="control" id="68d785b1_4436">Flex End:</span> Lines are packed toward the end of the cross axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-content: flex-end;
+}
+</div></li><li class="list__item" id="68d785b1_4438"><p id="68d785b1_4439"><span class="control" id="68d785b1_4440">Center:</span> Lines are centered along the cross axis.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-content: center;
+}
+</div></li><li class="list__item" id="68d785b1_4442"><p id="68d785b1_4443"><span class="control" id="68d785b1_4444">Space Between:</span> Lines are evenly distributed with the first line at the start and the last line at the end.</p><div class="code-block" data-lang="css"         >
+    .flex-container {
+        align-content: space-between;
+    }
+</div></li><li class="list__item" id="68d785b1_4446"><p id="68d785b1_4447"><span class="control" id="68d785b1_4448">Space Around:</span> Lines are evenly distributed with equal space around them.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-content: space-around;
+}
+</div></li><li class="list__item" id="68d785b1_4450"><p id="68d785b1_4451"><span class="control" id="68d785b1_4452">Stretch:</span> Lines are stretched to fill the container.</p><div class="code-block" data-lang="css"         >
+.flex-container {
+    align-content: stretch;
+}
+</div></li></ul></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="68d785b1_4454">CSS Flexbox is a powerful layout model that simplifies the creation of flexible and responsive designs. By understanding and applying the properties discussed, developers can efficiently structure web layouts and improve user experiences.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-34.html">CSS Float &amp; Clear</a>   <a class="navigation-links__next" href="extra-02.html">CSS Z-index and Order</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

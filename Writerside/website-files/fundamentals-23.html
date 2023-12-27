@@ -1,0 +1,76 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1488739"><meta name="build-number" content="${buildNumber}">       <title>CSS Display Property | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"introduction","level":0,"title":"Introduction","anchor":"#introduction"},{"id":"inline-block-properties","level":0,"title":"Inline \u0026 Block Properties","anchor":"#inline-block-properties"},{"id":"display-none","level":0,"title":"Display None","anchor":"#display-none"},{"id":"visibility","level":0,"title":"Visibility","anchor":"#visibility"},{"id":"flexbox-example","level":0,"title":"Flexbox Example","anchor":"#flexbox-example"},{"id":"grid","level":0,"title":"Grid","anchor":"#grid"},{"id":"precomposed-display-values","level":0,"title":"Precomposed Display Values","anchor":"#precomposed-display-values"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Display Property | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-23.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Display Property | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-23.html#webpage", "url": "fundamentals-23.html", "name": "CSS Display Property | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-23" data-main-title="CSS Display Property" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-23"   id="Fundamentals-23.md">CSS Display Property</h1>  <section class="chapter"><h2 id="introduction" data-toc="introduction"   >Introduction</h2><p id="28419030_2950">The <code class="code" id="28419030_2951">display</code> property in CSS plays a pivotal role in shaping the layout and visibility of HTML elements on a webpage. It is a versatile tool that determines how elements are rendered and how they interact with other elements.</p></section><section class="chapter"><h2 id="inline-block-properties" data-toc="inline-block-properties"   >Inline &amp; Block Properties</h2><p id="28419030_2952">CSS elements fall into two primary categories: inline and block. The <code class="code" id="28419030_2953">display</code> property allows for defining these fundamental characteristics.</p><section class="chapter"><h3 id="inline-elements" data-toc="inline-elements"   >Inline Elements</h3><p id="28419030_2954">Inline elements don't initiate a new line and occupy only as much width as necessary. Examples include <code class="code" id="28419030_2955">&lt;span&gt;</code>, <code class="code" id="28419030_2956">&lt;a&gt;</code>, and <code class="code" id="28419030_2957">&lt;img&gt;</code>.</p><p id="28419030_2958"><span class="control" id="28419030_2959">Example:</span></p><div class="code-block" data-lang="css"         >
+span {
+    display: inline;
+}
+</div></section><section class="chapter"><h3 id="block-elements" data-toc="block-elements"   >Block Elements</h3><p id="28419030_2961">Block elements commence on a new line and expand to fill the entire available width. Examples encompass <code class="code" id="28419030_2962">&lt;div&gt;</code>, <code class="code" id="28419030_2963">&lt;p&gt;</code>, and <code class="code" id="28419030_2964">&lt;h1&gt;</code>.</p><p id="28419030_2965"><span class="control" id="28419030_2966">Example:</span></p><div class="code-block" data-lang="css"         >
+div {
+    display: block;
+}
+</div></section></section><section class="chapter"><h2 id="display-none" data-toc="display-none"   >Display None</h2><p id="28419030_2968">The <code class="code" id="28419030_2969">display: none;</code> property serves the purpose of concealing an element entirely. This effectively removes the element from the document flow, rendering it invisible and reclaiming the space it would occupy.</p><p id="28419030_2970"><span class="control" id="28419030_2971">Example:</span></p><div class="code-block" data-lang="css"         >
+.hide-element {
+    display: none;
+}
+</div></section><section class="chapter"><h2 id="visibility" data-toc="visibility"   >Visibility</h2><p id="28419030_2973">While <code class="code" id="28419030_2974">display: none;</code> completely eradicates an element, the <code class="code" id="28419030_2975">visibility</code> property provides a means to hide an element while retaining its space in the layout.</p><p id="28419030_2976"><span class="control" id="28419030_2977">Example:</span></p><div class="code-block" data-lang="css"         >
+.invisible-element {
+    visibility: hidden;
+}
+</div></section><section class="chapter"><h2 id="flexbox-example" data-toc="flexbox-example"   >Flexbox Example</h2><p id="28419030_2979">Flexbox is a robust layout model that facilitates the creation of intricate layouts in a more efficient and predictable manner. The <code class="code" id="28419030_2980">display: flex;</code> property initiates a flex container.</p><p id="28419030_2981"><span class="control" id="28419030_2982">Example:</span></p><div class="code-block" data-lang="css"         >
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+</div></section><section class="chapter"><h2 id="grid" data-toc="grid"   >Grid</h2><p id="28419030_2984">CSS Grid introduces a two-dimensional grid-based layout system. The <code class="code" id="28419030_2985">display: grid;</code> property transforms an element into a grid container.</p><p id="28419030_2986"><span class="control" id="28419030_2987">Example:</span></p><div class="code-block" data-lang="css"         >
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+</div></section><section class="chapter"><h2 id="precomposed-display-values" data-toc="precomposed-display-values"   >Precomposed Display Values</h2><p id="28419030_2989">In CSS3, the <code class="code" id="28419030_2990">display</code> property provides precomposed values that offer convenient ways to control the layout and behavior of elements. Let's explore some of these values with examples:</p><section class="chapter"><h3 id="inline-block" data-toc="inline-block"   >inline-block</h3><p id="28419030_2991">The <code class="code" id="28419030_2992">inline-block</code> value generates a block box that behaves like an inline element. It's useful when you want an element to have block-level properties but still flow with surrounding content. Example:</p><div class="code-block" data-lang="css"         >
+.inline-block-example {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 10px;
+}
+</div><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;inline-block-example&quot;&gt;Inline Block&lt;/div&gt;
+</div></section><section class="chapter"><h3 id="inline-table" data-toc="inline-table"   >inline-table</h3><p id="28419030_2995">The <code class="code" id="28419030_2996">inline-table</code> value behaves like an HTML <code class="code" id="28419030_2997">&lt;table&gt;</code> element but as an inline box rather than a block-level box. It creates a table layout within an inline context. Example:</p><div class="code-block" data-lang="css"         >
+.inline-table-example {
+  display: inline-table;
+  border: 1px solid black;
+}
+</div><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;inline-table-example&quot;&gt;
+    &lt;div&gt;Table Cell 1&lt;/div&gt;
+    &lt;div&gt;Table Cell 2&lt;/div&gt;
+&lt;/div&gt;
+</div></section><section class="chapter"><h3 id="inline-flex" data-toc="inline-flex"   >inline-flex</h3><p id="28419030_3000">The <code class="code" id="28419030_3001">inline-flex</code> value makes an element behave like an inline-level element and lays out its content according to the flexbox model. Example:</p><div class="code-block" data-lang="css"         >
+.inline-flex-example {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgreen;
+  padding: 10px;
+}
+</div><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;inline-flex-example&quot;&gt;
+    &lt;span&gt;Flex Item 1&lt;/span&gt;
+    &lt;span&gt;Flex Item 2&lt;/span&gt;
+&lt;/div&gt;
+</div></section><section class="chapter"><h3 id="inline-grid" data-toc="inline-grid"   >inline-grid</h3><p id="28419030_3004">The <code class="code" id="28419030_3005">inline-grid</code> value makes an element behave like an inline-level element and lays out its content according to the grid model. Example:</p><div class="code-block" data-lang="css"         >
+.inline-grid-example {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 50px);
+  gap: 5px;
+}
+</div><div class="code-block" data-lang="markup"         >
+
+&lt;div class=&quot;inline-grid-example&quot;&gt;
+    &lt;div&gt;Grid Item 1&lt;/div&gt;
+    &lt;div&gt;Grid Item 2&lt;/div&gt;
+    &lt;div&gt;Grid Item 3&lt;/div&gt;
+&lt;/div&gt;
+</div><p id="28419030_3008">These examples showcase the use of precomposed values in the <code class="code" id="28419030_3009">display</code> property, providing flexibility in creating diverse and responsive layouts. Keep in mind that browser support may vary, so it's essential to check compatibility when using these features.</p></section></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="28419030_3010">Mastery of the CSS <code class="code" id="28419030_3011">display</code> property empowers developers to craft flexible and responsive layouts, elevating the design and user experience of web pages. Whether dealing with inline, block, flex, or grid elements, a profound understanding of how to leverage the <code class="code" id="28419030_3012">display</code> property is a fundamental skill in web development.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-22.html">CSS Sizing Units</a>   <a class="navigation-links__next" href="fundamentals-24.html">CSS Shadows and Outlines</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

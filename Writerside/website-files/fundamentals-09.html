@@ -1,0 +1,41 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1659178"><meta name="build-number" content="${buildNumber}">       <title>Id &amp; Classes in HTML | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"introduction","level":0,"title":"Introduction","anchor":"#introduction"},{"id":"id-and-classes","level":0,"title":"Id and Classes","anchor":"#id-and-classes"},{"id":"css-demo","level":0,"title":"CSS Demo","anchor":"#css-demo"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Id &amp; Classes in HTML | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-09.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Id &amp; Classes in HTML | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-09.html#webpage", "url": "fundamentals-09.html", "name": "Id &amp; Classes in HTML | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-09" data-main-title="Id &amp; Classes in HTML" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="HTML-Fundamentals.topic|HTML Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-09"   id="Fundamentals-09.md">Id &amp; Classes in HTML</h1>  <section class="chapter"><h2 id="introduction" data-toc="introduction"   >Introduction</h2><p id="60c3a3a_2061">In this section, we'll explore the concepts of IDs and classes, understanding how they serve as styling hooks for HTML elements. Additionally, we'll delve into a hands-on CSS demonstration to showcase the practical application of these styling techniques.</p></section><section class="chapter"><h2 id="id-and-classes" data-toc="id-and-classes"   >Id and Classes</h2><p id="60c3a3a_2062">In CSS, both IDs and classes act as selectors, allowing you to apply styles to specific HTML elements.</p><section class="chapter"><h3 id="id" data-toc="id"   >Id:</h3><ul class="list _ul" id="60c3a3a_2063"><li class="list__item" id="60c3a3a_2064"><p>An ID is a unique identifier for an HTML element.</p></li><li class="list__item" id="60c3a3a_2065"><p>Applied using the <code class="code" id="60c3a3a_2066">id</code> attribute: <code class="code" id="60c3a3a_2067">&lt;element id=&quot;uniqueId&quot;&gt;</code>.</p></li><li class="list__item" id="60c3a3a_2068"><p>Example: <code class="code" id="60c3a3a_2069">&lt;p id=&quot;introText&quot;&gt;This is a unique paragraph.&lt;/p&gt;</code>.</p></li></ul></section><section class="chapter"><h3 id="classes" data-toc="classes"   >Classes:</h3><ul class="list _ul" id="60c3a3a_2070"><li class="list__item" id="60c3a3a_2071"><p>Classes are reusable styling hooks that can be applied to multiple elements.</p></li><li class="list__item" id="60c3a3a_2072"><p>Applied using the <code class="code" id="60c3a3a_2073">class</code> attribute: <code class="code" id="60c3a3a_2074">&lt;element class=&quot;commonClass&quot;&gt;</code>.</p></li><li class="list__item" id="60c3a3a_2075"><p>Example: <code class="code" id="60c3a3a_2076">&lt;ul class=&quot;navigation&quot;&gt;...&lt;/ul&gt;</code>.</p></li></ul></section></section><section class="chapter"><h2 id="css-demo" data-toc="css-demo"   >CSS Demo</h2><p id="60c3a3a_2077">Let's dive into a practical CSS demonstration to see how IDs and classes come to life.</p><div class="code-block" data-lang="markup"         >
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;CSS Demo&lt;/title&gt;
+    &lt;style&gt;
+        /* Styling by ID */
+        #introText {
+            color: blue;
+            font-size: 18px;
+        }
+
+        /* Styling by Class */
+        .navigation {
+            list-style-type: none;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .navItem {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id=&quot;introText&quot;&gt;Welcome to the CSS Demo!&lt;/p&gt;
+
+    &lt;ul class=&quot;navigation&quot;&gt;
+        &lt;li class=&quot;navItem&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navItem&quot;&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navItem&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div><p id="60c3a3a_2079">In this demonstration:</p><ul class="list _ul" id="60c3a3a_2080"><li class="list__item" id="60c3a3a_2081"><p>The text with the ID <code class="code" id="60c3a3a_2082">introText</code> is styled with blue color and an increased font size.</p></li><li class="list__item" id="60c3a3a_2083"><p>The navigation list with the class <code class="code" id="60c3a3a_2084">navigation</code> has a gray background and no list-style.</p></li><li class="list__item" id="60c3a3a_2085"><p>Each navigation item with the class <code class="code" id="60c3a3a_2086">navItem</code> is styled as an inline block with padding, color, and bold font.</p></li></ul><p id="60c3a3a_2087">Feel free to experiment and modify the styles to see the immediate visual impact on the webpage.</p><p id="60c3a3a_2088">As you continue your journey into CSS, these fundamental concepts of IDs and classes will serve as building blocks for creating visually appealing and well-styled web pages.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-08.html">Inline &amp; Block Elements in HTML</a>   <a class="navigation-links__next" href="fundamentals-10.html">Video, Audio &amp; Media in HTML</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

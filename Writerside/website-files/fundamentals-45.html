@@ -1,0 +1,55 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1659178"><meta name="build-number" content="${buildNumber}">       <title>CSS Transitions | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"introduction","level":0,"title":"Introduction","anchor":"#introduction"},{"id":"syntax","level":0,"title":"Syntax","anchor":"#syntax"},{"id":"transition-properties","level":0,"title":"Transition Properties","anchor":"#transition-properties"},{"id":"common-use-cases","level":0,"title":"Common Use Cases","anchor":"#common-use-cases"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Transitions | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-45.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Transitions | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-45.html#webpage", "url": "fundamentals-45.html", "name": "CSS Transitions | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-45" data-main-title="CSS Transitions" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-45"   id="Fundamentals-45.md">CSS Transitions</h1>  <p id="adadee76_1906">CSS transitions allow for the smooth and gradual change of property values over a specified duration. They enhance the user experience by adding animations and visual effects to web pages. In this guide, we'll explore the key concepts of CSS transitions, including their syntax, properties, and common use cases.</p><section class="chapter"><h2 id="introduction" data-toc="introduction"   >Introduction</h2><p id="adadee76_1907">CSS transitions provide a way to animate changes in property values. They are triggered by changes in state, such as a hover or click event, and can be applied to various properties, including color, size, position, and more. Transitions make web interfaces more dynamic and engaging.</p></section><section class="chapter"><h2 id="syntax" data-toc="syntax"   >Syntax</h2><p id="adadee76_1908">The basic syntax for a CSS transition involves specifying the property to transition, the duration of the transition, and the timing function that determines the acceleration curve of the transition.</p><div class="code-block" data-lang="css"         >
+/* Property to transition | Duration | Timing Function */
+.element {
+    transition: property duration timing-function;
+}
+</div><p id="adadee76_1910">For example, to create a smooth color transition on a button when hovered over:</p><div class="code-block" data-lang="css"         >
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3498db;
+}
+</div><p id="adadee76_1912">In this example, the background color will transition over 0.3 seconds with an easing timing function when the button is hovered over.</p></section><section class="chapter"><h2 id="transition-properties" data-toc="transition-properties"   >Transition Properties</h2><section class="chapter"><h3 id="property" data-toc="property"   >Property</h3><p id="adadee76_1913">The <code class="code" id="adadee76_1914">property</code> value specifies the CSS property to transition. It can include multiple properties separated by commas.</p><div class="code-block" data-lang="css"         >
+.element {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+</div></section><section class="chapter"><h3 id="duration" data-toc="duration"   >Duration</h3><p id="adadee76_1916">The <code class="code" id="adadee76_1917">duration</code> value determines how long the transition takes to complete. It is specified in seconds (s) or milliseconds (ms).</p><div class="code-block" data-lang="css"         >
+.element {
+    transition: opacity 1s ease;
+}
+</div></section><section class="chapter"><h3 id="timing-function" data-toc="timing-function"   >Timing Function</h3><p id="adadee76_1919">The <code class="code" id="adadee76_1920">timing-function</code> value defines the acceleration curve of the transition. Common values include <code class="code" id="adadee76_1921">ease</code>, <code class="code" id="adadee76_1922">ease-in</code>, <code class="code" id="adadee76_1923">ease-out</code>, and <code class="code" id="adadee76_1924">ease-in-out</code>. Custom cubic bezier functions can also be used for more control.</p><div class="code-block" data-lang="css"         >
+.element {
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+</div></section><section class="chapter"><h3 id="delay" data-toc="delay"   >Delay</h3><p id="adadee76_1926">The <code class="code" id="adadee76_1927">delay</code> value (optional) specifies a delay before the transition starts. It is also specified in seconds or milliseconds.</p><div class="code-block" data-lang="css"         >
+.element {
+    transition: opacity 0.5s ease 0.2s;
+}
+</div></section></section><section class="chapter"><h2 id="common-use-cases" data-toc="common-use-cases"   >Common Use Cases</h2><section class="chapter"><h3 id="hover-effects" data-toc="hover-effects"   >Hover Effects</h3><div class="code-block" data-lang="css"         >
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #27ae60;
+}
+</div></section><section class="chapter"><h3 id="size-changes" data-toc="size-changes"   >Size Changes</h3><div class="code-block" data-lang="css"         >
+.box {
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.box:hover {
+    width: 200px;
+    height: 200px;
+}
+</div></section><section class="chapter"><h3 id="fading-in-out" data-toc="fading-in-out"   >Fading In/Out</h3><div class="code-block" data-lang="css"         >
+.fade {
+    transition: opacity 0.5s ease;
+}
+
+.fade:hover {
+    opacity: 0.5;
+}
+</div></section></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="adadee76_1932">CSS transitions provide a straightforward way to add animations to web pages. By carefully choosing transition properties, durations, and timing functions, developers can create visually appealing and responsive user interfaces.</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-42.html">CSS Transforms</a>   <a class="navigation-links__next" href="fundamentals-46.html">CSS Animations</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

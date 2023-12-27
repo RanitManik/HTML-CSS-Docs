@@ -21,9 +21,13 @@ fascinating world of web development using HTML and CSS.
 
 ## About
 
-This documentation is created by Ranit Manik, a passionate web developer with expertise in HTML, CSS, and JavaScript.
-The purpose of this project is to offer a structured and beginner-friendly guide to mastering the fundamentals of web
-design.
+This documentation is authored by Ranit Manik, a dedicated web developer proficient in HTML, CSS, and JavaScript. The
+primary objective of this project is to provide a well-organized and beginner-friendly guide for mastering the
+fundamentals of web design. The development of this project is facilitated
+using [JetBrains WriteSide IDE](https://www.jetbrains.com/writerside/). To contribute
+to this project, it is recommended to download and utilize
+JetBrains [WriteSide IDE](https://www.jetbrains.com/writerside/) for an optimal development
+experience.
 
 ## Features
 
@@ -40,29 +44,33 @@ design.
 
 - **Enthusiasts:** Ideal for those with a keen interest in understanding how websites are built.
 
-## Getting Started
-
-1. Clone the repository: `git clone https://github.com/RanitManik/HTML-CSS-Docs.git`
-
-2. Navigate to the project directory: `cd HTML-CSS-Docs`
-
-3. Open the documentation in your preferred browser.
-
 ## How to Contribute
 
-If you find any issues or have suggestions for improvement, feel free to contribute! Follow these steps:
+1. **Fork the Repository:** Fork the HTML CSS Docs 1.0 repository to your GitHub account.
+   ```bash
+   git clone https://github.com/RanitManik/HTML-CSS-Docs.git
+   ```
+2. **Create a Branch:** Create a new branch for your contribution using a descriptive branch name.
 
-1. Fork the repository.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. **Make Changes:** Implement your changes or additions to the documentation.
 
-3. Commit your changes: `git commit -am 'Add some feature'`
+4. **Commit Your Changes:** Commit your changes with a clear and concise commit message.
 
-4. Push to the branch: `git push origin feature/your-feature-name`
+   ```bash
+   git commit -am 'Add some feature'
+   ```
 
-5. Submit a pull request.
+5. **Push to Your Fork:** Push your changes to your forked repository.
 
-Let's make learning HTML and CSS an enjoyable experience for everyone!
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+6. **Submit a Pull Request:** Open a pull request to the main repository, clearly describing your changes.
 
 ## License
 

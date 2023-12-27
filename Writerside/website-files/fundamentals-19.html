@@ -1,0 +1,91 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.1829638"><meta name="build-number" content="${buildNumber}">       <title>CSS Fonts, Text &amp; Color Properties | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"css-fonts","level":0,"title":"CSS Fonts","anchor":"#css-fonts"},{"id":"text-properties","level":0,"title":"Text Properties","anchor":"#text-properties"},{"id":"css-colors","level":0,"title":"CSS Colors","anchor":"#css-colors"},{"id":"conclusion","level":0,"title":"Conclusion","anchor":"#conclusion"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="CSS Fonts, Text &amp; Color Properties | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-19.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="CSS Fonts, Text &amp; Color Properties | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-19.html#webpage", "url": "fundamentals-19.html", "name": "CSS Fonts, Text &amp; Color Properties | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-19" data-main-title="CSS Fonts, Text &amp; Color Properties" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-19"   id="Fundamentals-19.md">CSS Fonts, Text &amp; Color Properties</h1>  <section class="chapter"><h2 id="css-fonts" data-toc="css-fonts"   >CSS Fonts</h2><p id="9364b601_5146">In CSS, the <code class="code" id="9364b601_5147">font</code> property and related properties are used to define the font style, size, weight, and other aspects of text within an HTML element. The <code class="code" id="9364b601_5148">font</code> property is a shorthand property that combines several font-related properties into one.</p><p id="9364b601_5149">Here's the basic syntax for the <code class="code" id="9364b601_5150">font</code> property:</p><div class="code-block" data-lang="css"         >
+/* Syntax: font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]; */
+
+/* Example */
+.element {
+  font: italic small-caps bold 16px/1.5 &quot;Helvetica&quot;, sans-serif;
+}
+</div><p id="9364b601_5152">In this example:</p><ul class="list _ul" id="9364b601_5153"><li class="list__item" id="9364b601_5154"><p><code class="code" id="9364b601_5155">italic</code> is the font style,</p></li><li class="list__item" id="9364b601_5156"><p><code class="code" id="9364b601_5157">small-caps</code> is the font variant,</p></li><li class="list__item" id="9364b601_5158"><p><code class="code" id="9364b601_5159">bold</code> is the font weight,</p></li><li class="list__item" id="9364b601_5160"><p><code class="code" id="9364b601_5161">16px</code> is the font size,</p></li><li class="list__item" id="9364b601_5162"><p><code class="code" id="9364b601_5163">1.5</code> is the line height,</p></li><li class="list__item" id="9364b601_5164"><p><code class="code" id="9364b601_5165">&quot;Helvetica&quot;, sans-serif</code> is the font family.</p></li></ul><p id="9364b601_5166">You can also use individual properties to set these values separately:</p><div class="code-block" data-lang="css"         >
+/* Individual properties */
+.element {
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: &quot;Helvetica&quot;, sans-serif;
+}
+</div><p id="9364b601_5168">Here's a brief explanation of each property:</p><ul class="list _ul" id="9364b601_5169"><li class="list__item" id="9364b601_5170"><p><span class="control" id="9364b601_5171"><code class="code" id="9364b601_5172">font-style</code></span>: Specifies the font style (normal, italic, or oblique).</p></li><li class="list__item" id="9364b601_5173"><p><span class="control" id="9364b601_5174"><code class="code" id="9364b601_5175">font-variant</code></span>: Specifies whether the text should be displayed in small caps.</p></li><li class="list__item" id="9364b601_5176"><p><span class="control" id="9364b601_5177"><code class="code" id="9364b601_5178">font-weight</code></span>: Specifies the font weight (normal, bold, bolder, lighter, or a numerical value).</p></li><li class="list__item" id="9364b601_5179"><p><span class="control" id="9364b601_5180"><code class="code" id="9364b601_5181">font-size</code></span>: Specifies the font size.</p></li><li class="list__item" id="9364b601_5182"><p><span class="control" id="9364b601_5183"><code class="code" id="9364b601_5184">line-height</code></span>: Specifies the height of a line of text. It can be a number, a percentage, or a length.</p></li><li class="list__item" id="9364b601_5185"><p><span class="control" id="9364b601_5186"><code class="code" id="9364b601_5187">font-family</code></span>: Specifies the font family. You can list multiple font families, separated by commas. The browser will use the first available font in the list.</p></li></ul><p id="9364b601_5188">Adjust these properties based on your design preferences and the requirements of your webpage.</p></section><section class="chapter"><h2 id="text-properties" data-toc="text-properties"   >Text Properties</h2><p id="9364b601_5189">In CSS, there are various properties to style and control the appearance of text within HTML elements. Here are some commonly used text-related properties:</p><ol class="list _decimal" id="9364b601_5190" type="1"><li class="list__item" id="9364b601_5191"><p id="9364b601_5192"><span class="control" id="9364b601_5193"><code class="code" id="9364b601_5194">color</code></span>: Sets the color of the text.</p><div class="code-block" data-lang="css"         >
+.element {
+  color: #333; /* Color can be specified using names, hexadecimal, RGB, etc. */
+}
+</div></li><li class="list__item" id="9364b601_5196"><p id="9364b601_5197"><span class="control" id="9364b601_5198"><code class="code" id="9364b601_5199">font-family</code></span>: Specifies the font family for the text.</p><div class="code-block" data-lang="css"         >
+.element {
+  font-family: &quot;Arial&quot;, sans-serif; /* Specify multiple font families as a fallback */
+}
+</div></li><li class="list__item" id="9364b601_5201"><p id="9364b601_5202"><span class="control" id="9364b601_5203"><code class="code" id="9364b601_5204">font-size</code></span>: Sets the size of the font.</p><div class="code-block" data-lang="css"         >
+.element {
+  font-size: 16px; /* Size can be specified in pixels, ems, rems, percentages, etc. */
+}
+</div></li><li class="list__item" id="9364b601_5206"><p id="9364b601_5207"><span class="control" id="9364b601_5208"><code class="code" id="9364b601_5209">font-weight</code></span>: Sets the thickness or boldness of the font.</p><div class="code-block" data-lang="css"         >
+.element {
+  font-weight: bold; /* Values: normal, bold, bolder, lighter, 100 to 900 */
+}
+</div></li><li class="list__item" id="9364b601_5211"><p id="9364b601_5212"><span class="control" id="9364b601_5213"><code class="code" id="9364b601_5214">font-style</code></span>: Specifies the font style (normal, italic, or oblique).</p><div class="code-block" data-lang="css"         >
+.element {
+  font-style: italic; /* Values: normal, italic, oblique */
+}
+</div></li><li class="list__item" id="9364b601_5216"><p id="9364b601_5217"><span class="control" id="9364b601_5218"><code class="code" id="9364b601_5219">text-align</code></span>: Sets the horizontal alignment of text.</p><div class="code-block" data-lang="css"         >
+.element {
+  text-align: center; /* Values: left, center, right, justify */
+}
+</div></li><li class="list__item" id="9364b601_5221"><p id="9364b601_5222"><span class="control" id="9364b601_5223"><code class="code" id="9364b601_5224">text-decoration</code></span>: Sets the decoration of text (underline, overline, line-through, none).</p><div class="code-block" data-lang="css"         >
+.element {
+  text-decoration: underline; /* Values: none, underline, overline, line-through */
+}
+</div></li><li class="list__item" id="9364b601_5226"><p id="9364b601_5227"><span class="control" id="9364b601_5228"><code class="code" id="9364b601_5229">line-height</code></span>: Sets the height of a line of text.</p><div class="code-block" data-lang="css"         >
+.element {
+  line-height: 1.5; /* Can be a number, percentage, or length */
+}
+</div></li><li class="list__item" id="9364b601_5231"><p id="9364b601_5232"><span class="control" id="9364b601_5233"><code class="code" id="9364b601_5234">letter-spacing</code></span>: Controls the space between characters.</p><div class="code-block" data-lang="css"         >
+.element {
+  letter-spacing: 2px; /* Can be a number, ems, rems, etc. */
+}
+</div></li><li class="list__item" id="9364b601_5236"><p id="9364b601_5237"><span class="control" id="9364b601_5238"><code class="code" id="9364b601_5239">text-transform</code></span>: Specifies the capitalization of text.</p><div class="code-block" data-lang="css"         >
+.element {
+  text-transform: uppercase; /* Values: uppercase, lowercase, capitalize */
+}
+</div></li></ol><p id="9364b601_5241">These are just a few examples of text-related properties in CSS. You can combine and adjust these properties based on your design requirements to achieve the desired text styling.</p></section><section class="chapter"><h2 id="css-colors" data-toc="css-colors"   >CSS Colors</h2><p id="9364b601_5242">In CSS, there are various properties that control the color of different aspects of an element. Here are some commonly used color-related properties:</p><ol class="list _decimal" id="9364b601_5243" type="1"><li class="list__item" id="9364b601_5244"><p id="9364b601_5245"><span class="control" id="9364b601_5246"><code class="code" id="9364b601_5247">color</code></span>: Sets the color of the text content.</p><div class="code-block" data-lang="css"         >
+.element {
+  color: #333; /* Color can be specified using names, hexadecimal, RGB, etc. */
+}
+</div></li><li class="list__item" id="9364b601_5249"><p id="9364b601_5250"><span class="control" id="9364b601_5251"><code class="code" id="9364b601_5252">background-color</code></span>: Sets the background color of an element.</p><div class="code-block" data-lang="css"         >
+.element {
+  background-color: #f0f0f0;
+}
+</div></li><li class="list__item" id="9364b601_5254"><p id="9364b601_5255"><span class="control" id="9364b601_5256"><code class="code" id="9364b601_5257">border-color</code></span>: Sets the color of the borders of an element.</p><div class="code-block" data-lang="css"         >
+.element {
+  border: 1px solid #999; /* Border color can be specified separately */
+}
+</div></li><li class="list__item" id="9364b601_5259"><p id="9364b601_5260"><span class="control" id="9364b601_5261"><code class="code" id="9364b601_5262">outline-color</code></span>: Sets the color of the outline around an element.</p><div class="code-block" data-lang="css"         >
+.element {
+  outline: 2px solid blue; /* Outline color can be specified separately */
+}
+</div></li><li class="list__item" id="9364b601_5264"><p id="9364b601_5265"><span class="control" id="9364b601_5266"><code class="code" id="9364b601_5267">box-shadow</code></span>: Sets the color of the shadow around an element.</p><div class="code-block" data-lang="css"         >
+.element {
+  box-shadow: 5px 5px 5px #888; /* Shadow color can be specified separately */
+}
+</div></li><li class="list__item" id="9364b601_5269"><p id="9364b601_5270"><span class="control" id="9364b601_5271"><code class="code" id="9364b601_5272">text-shadow</code></span>: Sets the color of the shadow behind text.</p><div class="code-block" data-lang="css"         >
+.element {
+  text-shadow: 2px 2px 2px #999; /* Text shadow color can be specified separately */
+}
+</div></li><li class="list__item" id="9364b601_5274"><p id="9364b601_5275"><span class="control" id="9364b601_5276"><code class="code" id="9364b601_5277">opacity</code></span>: Sets the transparency of an element and its children.</p><div class="code-block" data-lang="css"         >
+.element {
+  opacity: 0.8; /* Values range from 0 (completely transparent) to 1 (completely opaque) */
+}
+</div></li><li class="list__item" id="9364b601_5279"><p id="9364b601_5280"><span class="control" id="9364b601_5281"><code class="code" id="9364b601_5282">rgba()</code> and <code class="code" id="9364b601_5283">hsla()</code></span>: Functions allowing you to specify colors with alpha (transparency) values.</p><div class="code-block" data-lang="css"         >
+.element {
+  background-color: rgba(255, 0, 0, 0.5); /* Red background with 50% transparency */
+  color: hsla(120, 100%, 50%, 0.8); /* Green text with 80% transparency */
+}
+</div></li></ol><p id="9364b601_5285">These are some of the key CSS properties for working with colors. You can use various color formats, including names, hexadecimal values, RGB, RGBA, HSL, and HSLA, to define colors in CSS.</p></section><section class="chapter"><h2 id="conclusion" data-toc="conclusion"   >Conclusion</h2><p id="9364b601_5286">As we conclude this exploration of text styling in CSS, you've gained insights into a variety of properties that can transform your text into a visually appealing and well-designed element on your web pages. The art of text styling is a powerful tool in the web developer's toolkit, allowing you to create engaging and aesthetically pleasing content. Keep experimenting and refining your text styling skills to make your web pages truly stand out. Happy styling!</p></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-18.html">CSS Box Model - Margin, Padding &amp; Borders</a>   <a class="navigation-links__next" href="fundamentals-21.html">CSS Specificity &amp; Cascade</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>

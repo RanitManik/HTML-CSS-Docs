@@ -1,0 +1,50 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-27T18:51:24.2005015"><meta name="build-number" content="${buildNumber}">       <title>Pseudo Selectors | HTML CSS Docs 1.0</title><script id="virtual-toc-data" type="application/json">[{"id":"pseudo-class-selectors","level":0,"title":"Pseudo-class Selectors","anchor":"#pseudo-class-selectors"},{"id":"pseudo-element-selectors","level":0,"title":"Pseudo-element Selectors","anchor":"#pseudo-element-selectors"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">   <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Pseudo Selectors | HTML CSS Docs 1.0"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="HTML CSS Docs 1.0 Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="fundamentals-17-02.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Pseudo Selectors | HTML CSS Docs 1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "fundamentals-17-02.html#webpage", "url": "fundamentals-17-02.html", "name": "Pseudo Selectors | HTML CSS Docs 1.0", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "HTML CSS Docs 1.0 Help" }</script><!-- End Schema.org --></head>      <body data-id="Fundamentals-17-02" data-main-title="Pseudo Selectors" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="CSS-Fundamentals.topic|CSS Fundamentals"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>HTML CSS Docs 1.0  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Fundamentals-17-02"   id="Fundamentals-17-02.md">Pseudo Selectors</h1>  <section class="chapter"><h2 id="pseudo-class-selectors" data-toc="pseudo-class-selectors"   >Pseudo-class Selectors</h2><p id="cd204772_2406">Pseudo-class selectors in CSS allow you to style elements based on their state or interaction. These selectors add a layer of dynamism to your stylesheets, enabling you to create visually engaging and responsive designs.</p><section class="chapter"><h3 id="hover-pseudo-class" data-toc="hover-pseudo-class"   >:hover Pseudo-class</h3><p id="cd204772_2407">The <code class="code" id="cd204772_2408">:hover</code> pseudo-class selects and styles an element when the user hovers over it.</p><div class="code-block" data-lang="css"         >
+/* Styles the text color of a link when hovered */
+a:hover {
+    color: purple;
+}
+</div><p id="cd204772_2410">In this example, the text color of a link changes to purple when it is hovered over.</p></section><section class="chapter"><h3 id="active-pseudo-class" data-toc="active-pseudo-class"   >:active Pseudo-class</h3><p id="cd204772_2411">The <code class="code" id="cd204772_2412">:active</code> pseudo-class selects and styles an element while it is being activated or clicked.</p><div class="code-block" data-lang="css"         >
+/* Styles the background color of a button while being clicked */
+button:active {
+    background-color: #ff4500;
+}
+</div><p id="cd204772_2414">Here, the background color of a button changes to a shade of orange when it is clicked.</p></section><section class="chapter"><h3 id="focus-pseudo-class" data-toc="focus-pseudo-class"   >:focus Pseudo-class</h3><p id="cd204772_2415">The <code class="code" id="cd204772_2416">:focus</code> pseudo-class selects and styles an element that has received focus.</p><div class="code-block" data-lang="css"         >
+/* Styles the border of a text input when it is in focus */
+input:focus {
+    border: 2px solid blue;
+}
+</div><p id="cd204772_2418">This rule adds a blue border to a text input when it is in focus.</p></section><section class="chapter"><h3 id="nth-child-pseudo-class" data-toc="nth-child-pseudo-class"   >:nth-child Pseudo-class</h3><p id="cd204772_2419">The <code class="code" id="cd204772_2420">:nth-child</code> pseudo-class selects and styles elements based on their position within a parent.</p><div class="code-block" data-lang="css"         >
+/* Styles every second paragraph within a section */
+section p:nth-child(2n) {
+    font-weight: bold;
+}
+</div><p id="cd204772_2422">This example makes every second paragraph within a section bold.</p></section><section class="chapter"><h3 id="not-pseudo-class" data-toc="not-pseudo-class"   >:not Pseudo-class</h3><p id="cd204772_2423">The <code class="code" id="cd204772_2424">:not</code> pseudo-class selects and styles elements that do not match a specified selector.</p><div class="code-block" data-lang="css"         >
+/* Styles all list items except the first one */
+li:not(:first-child) {
+    color: gray;
+}
+</div><p id="cd204772_2426">Here, all list items except the first one will have a gray text color.</p></section></section><section class="chapter"><h2 id="pseudo-element-selectors" data-toc="pseudo-element-selectors"   >Pseudo-element Selectors</h2><p id="cd204772_2428">Pseudo-elements in CSS allow you to style a specific part of an element, adding more granularity to your designs.</p><section class="chapter"><h3 id="before-pseudo-element" data-toc="before-pseudo-element"   >::before Pseudo-element</h3><p id="cd204772_2429">The <code class="code" id="cd204772_2430">::before</code> pseudo-element inserts content before the actual content of an element.</p><div class="code-block" data-lang="css"         >
+/* Adds a decorative symbol before each paragraph */
+p::before {
+    content: &quot;🔸&quot;;
+}
+</div><p id="cd204772_2432">This rule adds a small diamond symbol before each paragraph.</p></section><section class="chapter"><h3 id="after-pseudo-element" data-toc="after-pseudo-element"   >::after Pseudo-element</h3><p id="cd204772_2433">The <code class="code" id="cd204772_2434">::after</code> pseudo-element inserts content after the actual content of an element.</p><div class="code-block" data-lang="css"         >
+/* Adds a decorative line after each heading */
+h2::after {
+    content: &quot;__________________&quot;;
+    display: block;
+    color: #999;
+}
+</div><p id="cd204772_2436">Here, a line is added after each heading for decorative purposes.</p></section><section class="chapter"><h3 id="first-line-pseudo-element" data-toc="first-line-pseudo-element"   >::first-line Pseudo-element</h3><p id="cd204772_2437">The <code class="code" id="cd204772_2438">::first-line</code> pseudo-element selects and styles the first line of a block-level element.</p><div class="code-block" data-lang="css"         >
+/* Styles the first line of a paragraph differently */
+p::first-line {
+    font-weight: bold;
+    color: blue;
+}
+</div><p id="cd204772_2440">This example makes the first line of a paragraph bold and blue.</p></section><section class="chapter"><h3 id="selection-pseudo-element" data-toc="selection-pseudo-element"   >::selection Pseudo-element</h3><p id="cd204772_2441">The <code class="code" id="cd204772_2442">::selection</code> pseudo-element selects and styles the portion of text that is selected by the user.</p><div class="code-block" data-lang="css"         >
+/* Styles the background color of selected text */
+::selection {
+    background-color: yellow;
+    color: black;
+}
+</div><p id="cd204772_2444">In this case, selected text will have a yellow background and black text color.</p></section><section class="chapter"><h3 id="conclusion" data-toc="conclusion"   >Conclusion</h3><p id="cd204772_2445">Pseudo-class and pseudo-element selectors in CSS provide advanced styling capabilities, allowing you to respond to user interactions and enhance the visual appeal of your web pages. By leveraging these selectors, you can create dynamic and polished designs that adapt to different states and highlight specific elements.</p></section></section><div class="last-modified"> Last modified: 27 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="fundamentals-17-03.html">Attribute Selectors in CSS</a>   <a class="navigation-links__next" href="fundamentals-18.html">CSS Box Model - Margin, Padding &amp; Borders</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>
