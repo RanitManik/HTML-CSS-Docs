@@ -11,9 +11,9 @@
   <br>
 <a href="https://ranitmanik.github.io/HTML-CSS-Docs/">View Demo</a>
 ·
-<a href=".github/ISSUE/bug-report---.md">Report Bug</a>
+<a href=".github/ISSUE_TEMPLATE/bug_report.md">Report Bug</a>
 ·
-<a href=".github/ISSUE/feature-request---.md">Request Feature</a>
+<a href=".github/ISSUE_TEMPLATE/feature_request.md">Request Feature</a>
 </div>
 <br>
 Welcome to HTML CSS Docs 1.0! This project aims to provide comprehensive documentation for beginners diving into the
